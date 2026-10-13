@@ -1,0 +1,165 @@
+/**
+ * Settings > Logs and Status. Shared pieces are in bhec-ui.css, the tabs'
+ * frame in bhec-settings.css.
+ */
+
+/* ----- Logs list -------------------------------------------------------- */
+
+.wp-list-table.log-entries .column-campaign { width: 18%; }
+.wp-list-table.log-entries .column-result { width: 150px; }
+.wp-list-table.log-entries .column-when { width: 140px; }
+
+.wp-list-table.log-entries .column-result .bhec-status-detail { overflow-wrap: anywhere; }
+
+.bhec-mobile-result { display: none; }
+
+/* ----- Email details dialog --------------------------------------------- */
+
+dialog.bhec-log-dialog { width: min(560px, calc(100vw - 32px)); }
+
+dialog.bhec-log-dialog.has-content { width: min(860px, calc(100vw - 32px)); }
+
+.bhec-log-dialog-head {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.bhec-log-message { margin: 0; }
+
+.bhec-log-facts {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.bhec-log-facts th,
+.bhec-log-facts td {
+	padding: 6px 0;
+	border-top: 1px solid var(--bhec-line);
+	text-align: left;
+	vertical-align: top;
+	overflow-wrap: anywhere;
+}
+
+.bhec-log-facts tr:first-child th,
+.bhec-log-facts tr:first-child td { border-top: 0; }
+
+.bhec-log-facts th {
+	width: 90px;
+	padding-right: 12px;
+	color: var(--bhec-muted);
+	font-weight: 400;
+}
+
+.bhec-log-content { margin-top: 16px; }
+
+.bhec-log-content .bhec-preview-frame {
+	height: min(520px, 55vh);
+	border: 1px solid var(--bhec-line);
+}
+
+.bhec-log-no-content { margin: 16px 0 0; }
+
+/* ----- Status: health summary ------------------------------------------- */
+
+.bhec-health { margin-top: 16px; }
+
+.bhec-health .inside {
+	margin: 0;
+	padding: 0;
+}
+
+.bhec-health-verdict {
+	margin: 0;
+	padding: 14px 16px;
+	border-bottom: 1px solid var(--bhec-line);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.bhec-health-list { margin: 0; }
+
+.bhec-health-item {
+	display: grid;
+	grid-template-columns: 180px 130px minmax(0, 1fr);
+	gap: 4px 16px;
+	margin: 0;
+	padding: 12px 16px;
+}
+
+.bhec-health-item + .bhec-health-item { border-top: 1px solid var(--bhec-line); }
+
+.bhec-health-label { font-weight: 600; }
+
+.bhec-health-detail p { margin: 0; }
+
+.bhec-health-detail p + p { margin-top: 4px; }
+
+.bhec-health-detail .bhec-health-actions { margin-top: 10px; }
+
+/* ----- Status: sections ------------------------------------------------- */
+
+.bhec-tool-status { color: var(--bhec-muted); }
+
+.bhec-tool-status.is-error { color: var(--bhec-bad); }
+
+p.bhec-tool-status { min-height: 1.5em; margin: 6px 0 0; }
+
+.bhec-test-email { margin-top: 12px; }
+
+.bhec-test-email .bhec-inline input { flex: 0 1 25em; min-width: 0; }
+
+.bhec-facts,
+.bhec-tables { max-width: 760px; }
+
+.bhec-facts th { width: 220px; }
+
+.bhec-tables .bhec-num {
+	width: 110px;
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+}
+
+.bhec-tables tfoot th,
+.bhec-tables tfoot td { font-weight: 600; }
+
+.bhec-maintenance .bhec-inline { margin: 0; }
+
+.bhec-move-intro { max-width: 760px; }
+
+.bhec-move {
+	max-width: 760px;
+	margin-top: 12px;
+}
+
+.bhec-move .postbox { margin: 0; }
+
+.bhec-move .inside { padding: 4px 12px 14px; }
+
+.bhec-move input[type="file"] {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 14px;
+}
+
+/* ----- Narrow screens --------------------------------------------------- */
+
+@media screen and (max-width: 782px) {
+	.bhec-mobile-result {
+		display: block;
+		margin-top: 6px;
+	}
+
+	.bhec-health-item { grid-template-columns: minmax(0, 1fr) auto; }
+
+	.bhec-health-detail { grid-column: 1 / -1; }
+
+	.bhec-health-badge { justify-self: end; }
+
+	.bhec-facts th { width: auto; }
+
+	.bhec-test-email .bhec-inline input { flex: 1 1 100%; }
+
+	.bhec-log-facts th { width: 72px; }
+}

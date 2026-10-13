@@ -1,0 +1,19 @@
+/**
+ * Loaded on every plugin screen before bhec-ui.css. The screens' styles live
+ * in bhec-ui.css (shared) and bhec-{screen}.css.
+ */
+
+/* Free edition: the PRO mark beside Automatic Emails in the menu. */
+.bhec-pro-badge {
+	display: inline-block;
+	margin-left: 4px;
+	padding: 0 5px;
+	border: 1px solid currentColor;
+	border-radius: 3px;
+	font-size: 9px;
+	font-weight: 600;
+	line-height: 14px;
+	letter-spacing: 0.04em;
+	vertical-align: 1px;
+	opacity: 0.8;
+}

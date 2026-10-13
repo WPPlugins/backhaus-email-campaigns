@@ -1,0 +1,32 @@
+/**
+ * Settings tabs. Shared pieces are in bhec-ui.css.
+ */
+
+.bhec-settings .nav-tab-wrapper { margin-bottom: 8px; }
+
+.bhec-settings-body > .notice { margin-top: 16px; }
+
+.bhec-settings h2 {
+	margin-top: 28px;
+	font-size: 1.2em;
+}
+
+.bhec-settings h2:first-child,
+.bhec-settings form > h2:first-of-type { margin-top: 20px; }
+
+.bhec-settings .form-table th { width: 220px; }
+
+/* Section introductions: a readable line length on wide screens. */
+.bhec-settings form > p { max-width: 720px; }
+
+.bhec-settings .form-table td > .description,
+.bhec-settings .form-table fieldset .description { max-width: 640px; }
+
+.bhec-unit { color: var(--bhec-muted); }
+
+/* Room for a limit like 10000 next to the arrows; WordPress's small-text fits four digits. */
+.bhec-settings .form-table input[type="number"].small-text { width: 7.5em; }
+
+@media screen and (max-width: 782px) {
+	.bhec-settings .form-table th { width: auto; }
+}

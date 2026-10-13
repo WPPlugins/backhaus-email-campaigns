@@ -1,0 +1,5477 @@
+# Copyright (C) 2026 BackHAUS
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: BackHAUS Email Campaigns for WooCommerce 1.5.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/backhaus-email-campaigns\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-10T17:27:17+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: backhaus-email-campaigns\n"
+
+#. Plugin Name of the plugin
+#: backhaus-email-campaigns.php
+msgid "BackHAUS Email Campaigns for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: backhaus-email-campaigns.php
+msgid "https://backhaus.sg/email-campaigns"
+msgstr ""
+
+#. Description of the plugin
+#: backhaus-email-campaigns.php
+msgid "Email your WooCommerce customers from WordPress, sent through your store's own mail setup."
+msgstr ""
+
+#. Author of the plugin
+#: backhaus-email-campaigns.php
+msgid "BackHAUS"
+msgstr ""
+
+#. Author URI of the plugin
+#: backhaus-email-campaigns.php
+msgid "https://backhaus.sg/"
+msgstr ""
+
+#: admin/class-bhec-admin-analytics.php:29
+#: admin/class-bhec-admin-campaigns.php:17
+#: admin/class-bhec-admin-customers.php:21
+#: admin/class-bhec-admin-settings.php:296
+#: admin/class-bhec-admin-triggered.php:124
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#. translators: %s: date the week starts
+#: admin/class-bhec-admin-analytics.php:378
+#, php-format
+msgid "Week of %s"
+msgstr ""
+
+#: admin/class-bhec-admin-analytics.php:451
+msgid "Show as a Table"
+msgstr ""
+
+#: admin/class-bhec-admin-analytics.php:480
+#: admin/views/settings-status.php:211
+#: includes/class-bhec-merge-tags.php:241
+msgid "Total"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-analytics.php:519
+#, php-format
+msgid "%s email"
+msgid_plural "%s emails"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of orders
+#: admin/class-bhec-admin-analytics.php:523
+#, php-format
+msgid "%s order"
+msgid_plural "%s orders"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-analytics.php:526
+#: admin/class-bhec-admin.php:269
+#: admin/class-bhec-automatic-emails-list-table.php:203
+#: admin/class-bhec-campaigns-list-table.php:274
+#: admin/views/page-campaign-view.php:27
+#, php-format
+msgid "%s person"
+msgid_plural "%s people"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-analytics.php:536
+#: admin/views/page-campaign-view.php:126
+msgid "Opens are a rough guide: some mail apps load images for privacy, others block them."
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/class-bhec-admin-analytics.php:539
+#, php-format
+msgid "Orders count when someone buys within %s day of clicking a link in an email."
+msgid_plural "Orders count when someone buys within %s days of clicking a link in an email."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-campaigns.php:101
+msgid "Draft"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:102
+#: admin/class-bhec-automatic-sends-list-table.php:174
+msgid "Scheduled"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:103
+#: admin/class-bhec-admin-customers.php:658
+#: admin/class-bhec-admin-settings.php:23
+#: admin/class-bhec-automatic-sends-list-table.php:315
+#: admin/class-bhec-campaign-recipients-list-table.php:188
+msgid "Sending"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:104
+msgid "Paused"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:105
+#: admin/class-bhec-admin-customers.php:656
+#: admin/class-bhec-admin-logs.php:30
+#: admin/class-bhec-automatic-emails-list-table.php:73
+#: admin/class-bhec-automatic-sends-list-table.php:46
+#: admin/class-bhec-automatic-sends-list-table.php:175
+#: admin/class-bhec-automatic-sends-list-table.php:317
+#: admin/class-bhec-campaign-recipients-list-table.php:49
+#: admin/class-bhec-campaign-recipients-list-table.php:186
+#: admin/class-bhec-logs-list-table.php:43
+#: admin/class-bhec-report-automatic-list-table.php:64
+#: admin/class-bhec-report-campaigns-list-table.php:92
+#: admin/views/page-analytics-campaign.php:95
+#: admin/views/page-campaign-view.php:111
+msgid "Sent"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:106
+#: admin/class-bhec-admin-customers.php:660
+#: admin/class-bhec-admin-logs.php:31
+#: admin/class-bhec-automatic-sends-list-table.php:47
+#: admin/class-bhec-automatic-sends-list-table.php:318
+#: admin/class-bhec-campaign-recipients-list-table.php:52
+#: admin/class-bhec-campaign-recipients-list-table.php:190
+#: admin/class-bhec-logs-list-table.php:44
+msgid "Failed"
+msgstr ""
+
+#. translators: %s: time since, such as "5 mins"
+#: admin/class-bhec-admin-campaigns.php:129
+#, php-format
+msgid "Edited %s ago"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/class-bhec-admin-campaigns.php:132
+#, php-format
+msgid "Sends %s"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:135
+#: admin/views/page-campaign-view.php:55
+msgid "Starting in a minute"
+msgstr ""
+
+#. translators: 1: emails sent, 2: recipients
+#: admin/class-bhec-admin-campaigns.php:138
+#: admin/views/page-campaign-view.php:68
+#, php-format
+msgid "%1$s of %2$s sent"
+msgstr ""
+
+#. translators: 1: emails sent, 2: recipients
+#: admin/class-bhec-admin-campaigns.php:141
+#, php-format
+msgid "Paused at %1$s of %2$s"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-campaigns.php:147
+#, php-format
+msgid "%s emails could not be sent"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:148
+msgid "Could not start sending"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:221
+#: admin/class-bhec-admin-triggered.php:401
+msgid "Customer"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:222
+#: admin/class-bhec-admin-triggered.php:402
+msgid "First Name"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:223
+#: admin/class-bhec-admin-triggered.php:403
+msgid "Last Name"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:224
+#: admin/class-bhec-admin-triggered.php:404
+msgid "Full Name"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:225
+#: admin/class-bhec-admin-triggered.php:405
+msgid "Email Address"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:226
+#: admin/class-bhec-admin-triggered.php:406
+#: includes/class-bhec-merge-tags.php:23
+msgid "Company"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:227
+#: admin/class-bhec-admin-triggered.php:407
+#: includes/class-bhec-merge-tags.php:24
+msgid "City"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:228
+#: admin/class-bhec-admin-triggered.php:408
+#: includes/class-bhec-merge-tags.php:25
+msgid "State"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:229
+#: admin/class-bhec-admin-triggered.php:409
+#: includes/class-bhec-merge-tags.php:26
+msgid "Country"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:230
+#: admin/class-bhec-admin-triggered.php:410
+#: admin/views/page-campaign-edit.php:419
+msgid "Number of Orders"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:231
+#: admin/class-bhec-admin-customers.php:483
+#: admin/class-bhec-admin-triggered.php:411
+#: admin/class-bhec-subscribers-list-table.php:117
+msgid "Total Spent"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:232
+#: admin/class-bhec-admin-triggered.php:412
+msgid "Last Order Date"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:234
+#: admin/class-bhec-admin-triggered.php:428
+msgid "Store"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:235
+#: admin/class-bhec-admin-triggered.php:429
+msgid "Store Name"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:236
+#: admin/class-bhec-admin-triggered.php:430
+msgid "Store Link"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:238
+#: admin/class-bhec-admin-triggered.php:432
+msgid "Links"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:239
+#: admin/class-bhec-admin-triggered.php:434
+msgid "Unsubscribe Link"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:252
+#: admin/views/page-campaign-edit.php:90
+#: admin/views/page-campaign-edit.php:140
+#: admin/views/page-triggered-edit.php:85
+#: admin/views/page-triggered-edit.php:100
+msgid "Personalize"
+msgstr ""
+
+#. translators: %s: example merge tag with a fallback
+#: admin/class-bhec-admin-campaigns.php:269
+#, php-format
+msgid "For people with no first name on file, add a fallback: %s"
+msgstr ""
+
+#. translators: %s: list of order statuses
+#: admin/class-bhec-admin-campaigns.php:327
+#, php-format
+msgid "Subscribed customers with a %s order"
+msgstr ""
+
+#. translators: 1: start date, 2: end date
+#: admin/class-bhec-admin-campaigns.php:335
+#, php-format
+msgid "Ordered between %1$s and %2$s"
+msgstr ""
+
+#. translators: %s: date
+#: admin/class-bhec-admin-campaigns.php:338
+#, php-format
+msgid "Ordered on or after %s"
+msgstr ""
+
+#. translators: %s: date
+#: admin/class-bhec-admin-campaigns.php:341
+#, php-format
+msgid "Ordered on or before %s"
+msgstr ""
+
+#. translators: 1: minimum, 2: maximum
+#: admin/class-bhec-admin-campaigns.php:347
+#, php-format
+msgid "between %1$s and %2$s"
+msgstr ""
+
+#. translators: %s: minimum
+#: admin/class-bhec-admin-campaigns.php:351
+#, php-format
+msgid "at least %s"
+msgstr ""
+
+#. translators: %s: maximum
+#: admin/class-bhec-admin-campaigns.php:354
+#, php-format
+msgid "at most %s"
+msgstr ""
+
+#. translators: %s: such as "at least 2"
+#: admin/class-bhec-admin-campaigns.php:358
+#, php-format
+msgid "Placed %s orders"
+msgstr ""
+
+#. translators: %s: such as "at least $50.00"
+#: admin/class-bhec-admin-campaigns.php:365
+#, php-format
+msgid "Spent %s in total"
+msgstr ""
+
+#. translators: %s: country name
+#: admin/class-bhec-admin-campaigns.php:370
+#, php-format
+msgid "Billing address in %s"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:373
+msgid "Plus people who signed up without ordering"
+msgstr ""
+
+#. translators: %s: segment name
+#: admin/class-bhec-admin-campaigns.php:379
+#, php-format
+msgid "Leaving out the \"%s\" segment"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:392
+#: admin/class-bhec-admin-campaigns.php:615
+msgid "Campaign deleted."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:393
+msgid "Campaign duplicated. This is the copy."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:394
+msgid "Campaign scheduled."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:395
+msgid "Sending started. You can leave this page; sending carries on in the background."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:408
+#: admin/class-bhec-admin-campaigns.php:439
+#: admin/class-bhec-admin-campaigns.php:486
+#: admin/class-bhec-admin-campaigns.php:557
+#: admin/class-bhec-admin-campaigns.php:580
+#: admin/class-bhec-admin-campaigns.php:610
+#: admin/class-bhec-admin-campaigns.php:627
+#: admin/class-bhec-admin-customers.php:508
+#: admin/class-bhec-admin-customers.php:553
+#: admin/class-bhec-admin-customers.php:584
+#: admin/class-bhec-admin-customers.php:608
+#: admin/class-bhec-admin-customers.php:755
+#: admin/class-bhec-admin-logs.php:138
+#: admin/class-bhec-admin-logs.php:197
+#: admin/class-bhec-admin-queue.php:19
+#: admin/class-bhec-admin-queue.php:56
+#: admin/class-bhec-admin-queue.php:76
+#: admin/class-bhec-admin-queue.php:115
+#: admin/class-bhec-admin-queue.php:141
+#: admin/class-bhec-admin-queue.php:169
+#: admin/class-bhec-admin-queue.php:187
+#: admin/class-bhec-admin-queue.php:216
+#: admin/class-bhec-admin-triggered.php:580
+#: admin/class-bhec-admin-triggered.php:650
+#: admin/class-bhec-admin-triggered.php:667
+#: admin/class-bhec-admin-triggered.php:695
+#: admin/class-bhec-admin-triggered.php:756
+#: admin/class-bhec-admin-triggered.php:792
+#: admin/class-bhec-admin-triggered.php:814
+#: admin/class-bhec-admin-triggered.php:843
+#: includes/class-bhec-loader.php:257
+#: includes/class-bhec-loader.php:287
+#: includes/class-bhec-loader.php:310
+#: includes/class-bhec-loader.php:372
+#: includes/class-bhec-loader.php:391
+#: includes/class-bhec-loader.php:402
+#: includes/class-bhec-loader.php:476
+#: includes/class-bhec-loader.php:493
+#: includes/class-bhec-loader.php:524
+#: includes/class-bhec-loader.php:551
+#: includes/class-bhec-loader.php:651
+#: includes/class-bhec-loader.php:679
+msgid "Permission denied."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:444
+#: includes/class-bhec-signup-form.php:162
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:474
+msgid "Test email sent!"
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:476
+msgid "Failed to send test email. Check your email configuration."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:525
+msgid "Choose a time in the future to schedule this campaign, or clear the date."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:534
+msgid "Campaign saved."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:541
+msgid "Campaign created."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:544
+msgid "Failed to create campaign."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:585
+msgid "No campaign specified."
+msgstr ""
+
+#. translators: %d: number of recipients
+#: admin/class-bhec-admin-campaigns.php:597
+#, php-format
+msgid "Campaign queued for %d recipients."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:617
+msgid "Failed to delete campaign."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:636
+msgid "Campaign duplicated."
+msgstr ""
+
+#: admin/class-bhec-admin-campaigns.php:639
+msgid "Failed to duplicate campaign."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:56
+msgid "Only they can opt back in, from My Account or by ticking the box at checkout."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:57
+msgid "Only they can opt back in, from My Account."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:62
+#: admin/class-bhec-admin-triggered.php:55
+#: admin/class-bhec-admin.php:220
+#: admin/views/settings-logs.php:29
+#: admin/views/settings-status.php:30
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:63
+msgid "Tick the people you want to change first."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:64
+msgid "Subscribe This Person?"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:66
+#, php-format
+msgid "Subscribe %s People?"
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-customers.php:68
+#, php-format
+msgid "%s will start getting your marketing email. Only do this if they asked you to."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:69
+msgid "They will start getting your marketing email. Only do this if they asked you to."
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-customers.php:71
+#, php-format
+msgid "%s signed up but hasn't clicked the link in the confirmation email yet. Subscribe them only if they asked you to."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:72
+msgid "Unsubscribe This Person?"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:74
+#, php-format
+msgid "Unsubscribe %s People?"
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-customers.php:76
+#, php-format
+msgid "%s won't get any more marketing email."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:77
+msgid "They won't get any more marketing email."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:79
+msgid "One of them opted out, so only they can opt back in. They're left as they are."
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:81
+#, php-format
+msgid "%s of them opted out, so only they can opt back in. They're left as they are."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:82
+msgid "Nobody To Subscribe"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:83
+msgid "Everyone you picked is already subscribed or opted out."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:84
+msgid "Nobody To Unsubscribe"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:85
+msgid "Everyone you picked is already unsubscribed."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:86
+#: admin/class-bhec-subscribers-list-table.php:132
+#: admin/class-bhec-subscribers-list-table.php:208
+#: includes/class-bhec-signup-form.php:30
+msgid "Subscribe"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:88
+#, php-format
+msgid "Subscribe %s People"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:89
+#: admin/class-bhec-subscribers-list-table.php:133
+#: admin/class-bhec-subscribers-list-table.php:211
+#: admin/views/page-customers.php:54
+#: includes/class-bhec-unsubscribe.php:94
+msgid "Unsubscribe"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:91
+#, php-format
+msgid "Unsubscribe %s People"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:92
+#: admin/views/page-campaign-edit.php:524
+#: admin/views/page-customers.php:89
+#: admin/views/page-triggered-edit.php:365
+#: admin/views/settings-logs.php:127
+msgid "Close"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:93
+#: admin/views/settings-logs.php:30
+msgid "Loading..."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:94
+#: admin/class-bhec-admin-customers.php:476
+#: admin/class-bhec-subscribers-list-table.php:113
+#: admin/views/page-campaign-view.php:165
+#: includes/class-bhec-gdpr.php:177
+#: includes/class-bhec-gdpr.php:289
+msgid "Email"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:95
+#: admin/class-bhec-campaign-recipients-list-table.php:131
+#: admin/class-bhec-logs-list-table.php:185
+#: admin/views/settings-logs.php:136
+msgid "When"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:96
+#: admin/class-bhec-automatic-emails-list-table.php:74
+#: admin/class-bhec-campaigns-list-table.php:130
+#: admin/class-bhec-report-automatic-list-table.php:65
+#: admin/class-bhec-report-campaigns-list-table.php:93
+#: admin/views/page-analytics-campaign.php:101
+#: admin/views/page-analytics.php:81
+#: admin/views/page-campaign-view.php:115
+msgid "Opened"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:97
+#: admin/class-bhec-automatic-emails-list-table.php:75
+#: admin/class-bhec-campaigns-list-table.php:131
+#: admin/class-bhec-report-automatic-list-table.php:66
+#: admin/class-bhec-report-campaigns-list-table.php:94
+#: admin/views/page-analytics-campaign.php:106
+#: admin/views/page-analytics.php:86
+#: admin/views/page-campaign-view.php:120
+msgid "Clicked"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:98
+msgid "Yes"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:99
+msgid "No"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:100
+msgid "No campaigns or automatic emails yet."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:101
+msgid "Open and click tracking is off in Settings, so new opens and clicks aren't recorded."
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-customers.php:103
+#, php-format
+msgid "Showing the latest %s."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:104
+#: admin/class-bhec-campaign-recipients-list-table.php:179
+#: admin/class-bhec-subscribers-list-table.php:214
+msgid "Customer Profile"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:105
+#: admin/class-bhec-admin-customers.php:479
+#: admin/class-bhec-subscribers-list-table.php:115
+#: includes/class-bhec-gdpr.php:291
+msgid "Source"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:106
+#: admin/class-bhec-admin-customers.php:589
+msgid "That isn't an email address. Check it and try again."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:107
+msgid "Choose a file first."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:108
+msgid "Importing..."
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:126
+#, php-format
+msgid "%s person subscribed."
+msgid_plural "%s people subscribed."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:129
+#, php-format
+msgid "%s person was left as they are: they opted out, so only they can opt back in."
+msgid_plural "%s people were left as they are: they opted out, so only they can opt back in."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:134
+#: admin/class-bhec-admin-customers.php:526
+#, php-format
+msgid "%s person unsubscribed."
+msgid_plural "%s people unsubscribed."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:138
+#, php-format
+msgid "%s person was already unsubscribed, so nothing changed."
+msgid_plural "%s people were already unsubscribed, so nothing changed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-customers.php:162
+#: admin/views/settings-status.php:169
+msgid "Subscribed"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:163
+msgid "Waiting for Confirmation"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:164
+#: admin/class-bhec-dashboard-widget.php:85
+#: admin/views/page-analytics.php:96
+#: admin/views/settings-status.php:173
+#: includes/class-bhec-unsubscribe.php:54
+msgid "Unsubscribed"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:165
+msgid "Bounced"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:166
+msgid "Not Subscribed"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/class-bhec-admin-customers.php:262
+#, php-format
+msgid "Since %s"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:264
+msgid "Automatically, as a customer"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/class-bhec-admin-customers.php:268
+#, php-format
+msgid "Opted out %s, then asked to rejoin"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:270
+msgid "Hasn't clicked the confirmation link yet"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/class-bhec-admin-customers.php:273
+#, php-format
+msgid "Opted out %s"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:275
+msgid "Their mail service said this mailbox doesn't exist, so nothing more is sent. Subscribe them again once it's fixed."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:277
+msgid "Hasn't opted in"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:288
+#: admin/class-bhec-admin-customers.php:289
+msgid "Checkout"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:290
+#: admin/class-bhec-admin-customers.php:291
+msgid "My Account"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:292
+#: admin/class-bhec-admin-settings.php:217
+msgid "Sign-Up Form"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:293
+#: admin/views/page-customers.php:118
+msgid "Import"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:294
+msgid "Admin"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:295
+msgid "Erasure Request"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:296
+msgid "Failed Send"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:477
+#: includes/class-bhec-gdpr.php:117
+#: includes/class-bhec-gdpr.php:324
+msgid "Name"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:478
+#: admin/class-bhec-subscribers-list-table.php:114
+msgid "Subscription"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:480
+#: includes/class-bhec-gdpr.php:292
+msgid "Opted In"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:481
+#: includes/class-bhec-gdpr.php:293
+msgid "Opted Out"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:482
+#: admin/class-bhec-subscribers-list-table.php:116
+msgid "Orders"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:512
+#: includes/class-bhec-csv-importer.php:20
+msgid "No file uploaded."
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin-customers.php:529
+#, php-format
+msgid "%s was already unsubscribed."
+msgid_plural "%s were already unsubscribed."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of cells
+#: admin/class-bhec-admin-customers.php:533
+#, php-format
+msgid "%s other cell, such as a name or header, was ignored."
+msgid_plural "%s other cells, such as names or headers, were ignored."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-customers.php:560
+#: includes/class-bhec-loader.php:498
+msgid "Invalid email address."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:565
+msgid "Customer subscribed."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:567
+msgid "This customer unsubscribed or hasn't confirmed, so only they can opt back in: from My Account, or by ticking the box at checkout."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:570
+msgid "Customer unsubscribed."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:572
+msgid "Invalid action."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:613
+msgid "Invalid email."
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:657
+msgid "Waiting to send"
+msgstr ""
+
+#. translators: 1: number of emails, 2: reason
+#: admin/class-bhec-admin-customers.php:659
+#: admin/class-bhec-admin-triggered.php:540
+msgid "Held back"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:661
+#: admin/class-bhec-admin-logs.php:32
+#: admin/class-bhec-automatic-sends-list-table.php:48
+#: admin/class-bhec-automatic-sends-list-table.php:319
+#: admin/class-bhec-campaign-recipients-list-table.php:53
+#: admin/class-bhec-campaign-recipients-list-table.php:191
+#: admin/class-bhec-logs-list-table.php:45
+msgid "Skipped"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:662
+#: admin/class-bhec-automatic-sends-list-table.php:49
+#: admin/class-bhec-automatic-sends-list-table.php:320
+msgid "Cancelled"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:691
+msgid "(Deleted Campaign)"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:694
+#: admin/class-bhec-campaigns-list-table.php:127
+#: admin/class-bhec-logs-list-table.php:183
+#: admin/class-bhec-report-campaigns-list-table.php:91
+#: admin/views/settings-logs.php:134
+#: includes/class-bhec-gdpr.php:116
+msgid "Campaign"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:697
+#: admin/class-bhec-admin-logs.php:162
+#: admin/class-bhec-admin-triggered.php:356
+#: admin/class-bhec-logs-list-table.php:312
+msgid "(Deleted Automatic Email)"
+msgstr ""
+
+#: admin/class-bhec-admin-customers.php:700
+#: admin/class-bhec-automatic-emails-list-table.php:70
+#: admin/class-bhec-automatic-sends-list-table.php:172
+#: admin/class-bhec-report-automatic-list-table.php:63
+#: admin/views/page-triggered.php:81
+#: includes/class-bhec-gdpr.php:145
+msgid "Automatic Email"
+msgstr ""
+
+#. translators: 1: number of customers updated, 2: number skipped
+#: admin/class-bhec-admin-customers.php:781
+#, php-format
+msgid "%1$d customers updated. %2$d skipped because they unsubscribed or haven't confirmed; only they can opt back in."
+msgstr ""
+
+#. translators: %d: number of customers affected
+#: admin/class-bhec-admin-customers.php:788
+#, php-format
+msgid "%d customers updated."
+msgstr ""
+
+#: admin/class-bhec-admin-logs.php:20
+msgid "Email logs are under Settings, Logs."
+msgstr ""
+
+#. translators: %d: campaign number
+#: admin/class-bhec-admin-logs.php:52
+#, php-format
+msgid "Campaign %d (deleted)"
+msgstr ""
+
+#: admin/class-bhec-admin-logs.php:54
+#: admin/class-bhec-automatic-emails-list-table.php:99
+#: admin/class-bhec-automatic-sends-list-table.php:234
+#: admin/class-bhec-automatic-sends-list-table.php:304
+#: admin/class-bhec-campaigns-list-table.php:186
+#: admin/class-bhec-dashboard-widget.php:170
+#: admin/class-bhec-report-automatic-list-table.php:83
+#: admin/class-bhec-report-campaigns-list-table.php:116
+#: admin/views/page-analytics-campaign.php:33
+#: admin/views/page-campaign-view.php:35
+#: admin/views/page-triggered-edit.php:276
+#: admin/views/page-triggered.php:89
+msgid "(No Name)"
+msgstr ""
+
+#: admin/class-bhec-admin-logs.php:143
+msgid "No log ID specified."
+msgstr ""
+
+#: admin/class-bhec-admin-logs.php:148
+msgid "This log entry no longer exists."
+msgstr ""
+
+#: admin/class-bhec-admin-logs.php:162
+#: admin/class-bhec-logs-list-table.php:312
+msgid "Automatic email"
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:63
+msgid "Campaign cannot be paused."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:67
+msgid "Campaign paused."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:83
+msgid "Campaign cannot be stopped."
+msgstr ""
+
+#. translators: %d: number of cancelled items
+#: admin/class-bhec-admin-queue.php:104
+#, php-format
+msgid "Campaign stopped. %d pending emails cancelled."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:122
+msgid "Campaign cannot be resumed."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:132
+msgid "Campaign resumed."
+msgstr ""
+
+#. translators: %d: number of items retried
+#: admin/class-bhec-admin-queue.php:158
+#, php-format
+msgid "%d items queued for retry."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:178
+msgid "Sending resumed."
+msgstr ""
+
+#. translators: %d: number of emails
+#: admin/class-bhec-admin-queue.php:204
+#, php-format
+msgid "%d held email will be sent."
+msgid_plural "%d held emails will be sent."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of emails
+#: admin/class-bhec-admin-queue.php:207
+#, php-format
+msgid "%d held email discarded."
+msgid_plural "%d held emails discarded."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-queue.php:229
+msgid "Queue item not found."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:234
+#: includes/class-bhec-campaign.php:298
+msgid "Campaign not found."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:238
+msgid "Sending is paused because your mail provider asked us to slow down. Try again when it resumes."
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-queue.php:251
+#, php-format
+msgid "Email sent to %s."
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-queue.php:255
+#, php-format
+msgid "Not sent: %s has unsubscribed."
+msgstr ""
+
+#: admin/class-bhec-admin-queue.php:258
+msgid "Not sent: your mail provider asked us to slow down. Sending pauses briefly and this email goes out when it resumes."
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-queue.php:262
+#, php-format
+msgid "Failed to send to %s. See Logs for the reason."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:22
+#: admin/class-bhec-admin-settings.php:225
+msgid "General"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:24
+msgid "Sign-Ups and Carts"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:24
+msgid "Sign-Ups"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:25
+msgid "Logs"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:26
+#: admin/class-bhec-admin-settings.php:477
+#: admin/class-bhec-automatic-emails-list-table.php:72
+#: admin/class-bhec-automatic-sends-list-table.php:173
+#: admin/class-bhec-campaigns-list-table.php:128
+#: includes/class-bhec-gdpr.php:118
+#: includes/class-bhec-gdpr.php:147
+#: includes/class-bhec-gdpr.php:222
+#: includes/class-bhec-gdpr.php:250
+#: includes/class-bhec-gdpr.php:290
+#: includes/class-bhec-gdpr.php:320
+msgid "Status"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:27
+msgid "License"
+msgstr ""
+
+#. translators: 1: version number, 2: edition, Free or Pro
+#: admin/class-bhec-admin-settings.php:27
+#: admin/views/settings-status.php:132
+msgid "Pro"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:94
+msgid "Sender"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:95
+msgid "From Name"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:97
+msgid "The name people see in their inbox. Leave empty to use your store name."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:99
+msgid "From Email"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:102
+msgid "Leave empty to use your WooCommerce email address. Some mail providers only send from their own address."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:106
+msgid "Credit Line"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:108
+msgid "Add a small \"Sent with BackHAUS Email Campaigns\" line under your emails. Thank you if you do."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:112
+msgid "Consent"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:113
+#: admin/class-bhec-admin-settings.php:415
+msgid "Who Gets Marketing Email"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:114
+#: admin/class-bhec-admin-settings.php:437
+msgid "Checkout Box Starts"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:115
+msgid "Confirm by Email"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:117
+msgid "Send new sign-ups a link to confirm before they get marketing email (double opt-in)."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:120
+msgid "Tracking"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:121
+#: admin/views/page-analytics.php:127
+msgid "Opens and Clicks"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:123
+msgid "Track when people open an email and click its links."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:125
+msgid "Count a Sale Within"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:128
+msgid "days of a click"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:129
+msgid "An order placed this soon after someone clicks a link counts toward that email's revenue."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:131
+msgid "Google Analytics"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:133
+msgid "Add UTM tags to the links in campaign and automatic emails."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:135
+msgid "UTM Source"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:139
+msgid "UTM Medium"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:148
+msgid "Speed Limits"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:150
+msgid "Match these to your mail provider, so it doesn't turn emails away. Campaigns and automatic emails count together. Leave a limit at 0 for none."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:155
+msgid "Emails Per Minute"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:155
+msgid "For example, Microsoft 365 allows 30 a minute."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:156
+msgid "Emails Per Hour"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:157
+msgid "Emails Per Day"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:157
+msgid "For example, Microsoft 365 allows 10,000 a day."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:169
+msgid "Over-Mailing Guard"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:171
+msgid "Catches someone about to be emailed too often by mistake, like an automatic email that fires on every order, or a campaign sent twice. Emails over a limit are held back, not sent, and you can send them anyway from the campaign's page or from Automatic Emails. Leave a limit at 0 to turn it off."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:176
+msgid "Days Between Campaigns"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:176
+#: admin/class-bhec-admin-settings.php:286
+#: admin/views/page-triggered-edit.php:297
+#: admin/views/page-triggered-edit.php:299
+msgid "days"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:176
+msgid "Each person gets at most one campaign in this many days."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:177
+msgid "Emails Per Person Per Day"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:177
+msgid "emails"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:177
+msgid "Campaigns and automatic emails together, in any 24 hours. Automatic emails set to always send don't count."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:178
+msgid "Repeat an Automatic Email After"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:178
+#: admin/views/page-campaign-edit.php:117
+#: admin/views/page-triggered-edit.php:296
+msgid "hours"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:178
+msgid "The same automatic email reaches a person at most once in this many hours."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:179
+msgid "Pause Automatic Emails After"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:179
+msgid "held in 10 minutes"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:179
+msgid "That many held in a short time usually means something fires too often, so automatic emails pause and you get an email."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:192
+#: admin/class-bhec-admin-status.php:73
+#: admin/views/settings-status.php:246
+msgid "Background Sending"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:194
+msgid "Emails go out in small runs about once a minute. The defaults suit most stores."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:198
+msgid "Emails Per Run"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:202
+msgid "Pause Between Emails"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:205
+msgid "seconds"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:207
+msgid "Retries for a Failed Email"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:210
+msgid "A failed email is tried again later, up to this many times."
+msgstr ""
+
+#. translators: 1: shortcode, 2: link to the General tab
+#: admin/class-bhec-admin-settings.php:223
+#, php-format
+msgid "Add a sign-up form to any page with the %1$s shortcode. To have new sign-ups confirm by email first, turn on Confirm by Email under %2$s."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:234
+msgid "Abandoned Carts"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:235
+msgid "Save Guest Emails"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:237
+msgid "Keep the email a guest types at checkout, so a reminder can go out if they leave without ordering."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:239
+msgid "Trash Unpaid Orders"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:242
+msgid "days after the reminder"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:243
+msgid "Moves a customer's unpaid checkout orders to the trash this long after the reminder, or as soon as they pay for another order. Orders you create yourself are never trashed. 0 keeps them all."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:250
+msgid "Bot Protection"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:253
+msgid "Stops bots from filling in your sign-up form and saved carts. Both services work invisibly; people don't solve puzzles."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:254
+msgid "Stops bots from filling in your sign-up form. Both services work invisibly; people don't solve puzzles."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:259
+msgid "Service"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:260
+msgid "Site Key"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:263
+msgid "Secret Key"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:269
+msgid "Coupons"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:270
+#: admin/views/settings-status.php:228
+msgid "Delete Expired Coupons"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:273
+msgid "days after they expire"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:274
+msgid "Only coupons this plugin made. 0 keeps them."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:281
+msgid "What to Keep"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:282
+#: admin/class-bhec-admin-settings.php:601
+msgid "Email Log"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:283
+msgid "Keep Logs For"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:287
+msgid "0 keeps them forever. 90 days suits most stores."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:317
+msgid "Save Changes"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:319
+msgid "Only site administrators can change these settings."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:332
+msgid "Activating..."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:333
+msgid "Deactivating..."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:334
+msgid "Deactivate the license on this site? Everything keeps working; you stop getting updates and support here until you activate it again."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:335
+msgid "That didn't work. Check the key and try again."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:336
+msgid "Switch to opt-in at checkout? Everyone who was subscribed automatically will be unsubscribed. People who opted in themselves stay subscribed. This can't be undone."
+msgstr ""
+
+#. translators: %d: number of customers unsubscribed
+#: admin/class-bhec-admin-settings.php:371
+#, php-format
+msgid "Switched to opt-in at checkout. %d people who were subscribed automatically are now unsubscribed. People who opted in themselves are unchanged."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:405
+msgid "Nobody who unsubscribes gets marketing email again unless they sign up again themselves."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:418
+msgid "Every customer, unless they unsubscribe (auto opt-in)"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:423
+msgid "Only customers who tick a box at checkout (explicit opt-in)"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:425
+msgid "Switching to explicit opt-in unsubscribes everyone who was subscribed automatically. People who opted in themselves stay subscribed."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:440
+msgid "Ticked"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:445
+msgid "Unticked"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:447
+msgid "Only used with explicit opt-in."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:459
+msgid "BackHAUS Email Campaigns Pro"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:460
+msgid "Pro adds automatic emails (abandoned carts, unpaid orders, follow-ups after an order, win-backs) that can run as a series, back-in-stock and new-arrival emails, subject tests, a unique coupon for each person and saved guest carts."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:461
+msgid "See Pro"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:470
+msgid "Active"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:470
+msgid "You get updates and support."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:471
+msgid "Expired"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:471
+msgid "Everything keeps working. Renew to get updates and support again."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:473
+msgid "Not Activated"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:473
+msgid "Everything works without a license. Activate it to get updates and support."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:484
+msgid "License Key"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:490
+msgid "Only an administrator can activate or deactivate the license."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:493
+msgid "Deactivate"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:496
+msgid "Paste your license key"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:497
+msgid "Activate"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:504
+msgid "Your Account"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:506
+msgid "Manage Your License and Billing"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:507
+msgid "Renewals, plan changes, invoices and card details, on backhaus.sg."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:546
+msgid "Saved. Type a new one to replace it."
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:595
+msgid "Who, what and when: the address, subject and result of each email (recommended)"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:596
+msgid "Everything, including each email's content (the database grows quickly)"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:597
+msgid "Nothing"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:619
+#: admin/class-bhec-automatic-emails-list-table.php:87
+#: admin/class-bhec-report-automatic-list-table.php:87
+msgid "Off"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:620
+msgid "Google reCAPTCHA v3"
+msgstr ""
+
+#: admin/class-bhec-admin-settings.php:621
+msgid "Cloudflare Turnstile"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:26
+msgid "Status is under Settings, Status."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:61
+msgid "OK"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:61
+msgid "Needs Attention"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:79
+msgid "How to Use a Real Cron Job"
+msgstr ""
+
+#. translators: accessibility text
+#: admin/class-bhec-admin-status.php:81
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:83
+msgid "It only runs when someone visits your site, so quiet hours can hold emails back."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:90
+msgid "It isn't scheduled, so no campaigns or automatic emails go out."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:91
+msgid "Start It Again"
+msgstr ""
+
+#. translators: %s: time since, such as "25 mins"
+#: admin/class-bhec-admin-status.php:102
+#, php-format
+msgid "It's behind: the next check was due %s ago."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:103
+msgid "Check that your server's cron job still runs."
+msgstr ""
+
+#. translators: %s: time
+#: admin/class-bhec-admin-status.php:112
+#, php-format
+msgid "Checks for emails to send every minute. Next check at %s."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:113
+msgid "Checks for emails to send every minute. The next check is due now."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:114
+msgid "Your server's cron job runs it."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:126
+msgid "Pauses"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:130
+msgid "Nothing is paused."
+msgstr ""
+
+#. translators: 1: time paused, 2: time it resumes
+#: admin/class-bhec-admin-status.php:139
+#, php-format
+msgid "Your mail provider asked us to slow down at %1$s, so nothing sends until %2$s. It resumes by itself."
+msgstr ""
+
+#. translators: %s: error from the mail provider
+#: admin/class-bhec-admin-status.php:145
+#: admin/class-bhec-admin.php:109
+#, php-format
+msgid "Provider message: %s"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:147
+#: admin/class-bhec-admin.php:96
+msgid "Resume Now"
+msgstr ""
+
+#. translators: %s: why automatic emails were paused
+#: admin/class-bhec-admin-status.php:151
+#, php-format
+msgid "Automatic emails are paused: %s"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:152
+msgid "Nobody gets automatic emails until you resume them."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:153
+#: admin/class-bhec-admin.php:119
+msgid "Resume Automatic Emails"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:165
+msgid "Last Email Sent"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:187
+msgid "See Failed Emails"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:191
+#: admin/class-bhec-admin-status.php:203
+msgid "Nothing has gone out yet."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:191
+msgid "Nothing Yet"
+msgstr ""
+
+#. translators: 1: date and time, 2: time since, such as "5 mins"
+#: admin/class-bhec-admin-status.php:198
+#, php-format
+msgid "%1$s, %2$s ago."
+msgstr ""
+
+#. translators: %s: error message
+#: admin/class-bhec-admin-status.php:211
+#, php-format
+msgid "The latest email failed: %s"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:281
+msgid "Mail Setup"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:283
+msgid "Email sent straight from a web server often lands in spam. A mail plugin that sends through your email provider is more reliable."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:286
+msgid "No mail plugin found, so WordPress sends email from your web server."
+msgstr ""
+
+#. translators: %s: mail plugin name
+#: admin/class-bhec-admin-status.php:293
+#, php-format
+msgid "%s is set to send from your web server."
+msgstr ""
+
+#. translators: %s: mail plugin name
+#: admin/class-bhec-admin-status.php:298
+#, php-format
+msgid "%s sends your email."
+msgstr ""
+
+#. translators: 1: mail plugin name, 2: email service
+#: admin/class-bhec-admin-status.php:300
+#, php-format
+msgid "%1$s sends your email through %2$s."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:333
+msgid "Sender Domain"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:337
+msgid "Not Checked"
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:340
+msgid "There's no sender address. Set one under General, From Email."
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-status.php:348
+#, php-format
+msgid "Your emails come from %s, a free mailbox. Inboxes turn away or spam-folder mail that claims a free mailbox address but is sent from somewhere else."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:349
+msgid "Send from an address at your own domain (General, From Email)."
+msgstr ""
+
+#. translators: %s: domain name
+#: admin/class-bhec-admin-status.php:356
+#, php-format
+msgid "%s is a local address, so it isn't checked."
+msgstr ""
+
+#. translators: %s: domain name
+#: admin/class-bhec-admin-status.php:362
+#, php-format
+msgid "This server can't look up DNS records, so %s wasn't checked."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:370
+msgid "No SPF record, so inboxes can't tell your mail service may send for this domain. Your mail service's setup guide gives the record to add."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:372
+msgid "More than one SPF record: inboxes ignore them all. Merge them into one."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:380
+msgid "No DMARC record. To start, add a TXT record named _dmarc with the value v=DMARC1; p=none;"
+msgstr ""
+
+#. translators: 1: domain name, 2: list such as "SPF, DKIM and DMARC"
+#: admin/class-bhec-admin-status.php:386
+#, php-format
+msgid "%1$s has %2$s set up."
+msgstr ""
+
+#. translators: %s: domain name
+#: admin/class-bhec-admin-status.php:388
+#, php-format
+msgid "%s has none of SPF, DKIM or DMARC set up."
+msgstr ""
+
+#: admin/class-bhec-admin-status.php:391
+msgid "DKIM wasn't found under the usual names. It can sit under any name, so check your mail service's domain settings."
+msgstr ""
+
+#. translators: %s: automatic email name
+#: admin/class-bhec-admin-triggered.php:57
+#, php-format
+msgid "Delete \"%s\"? Its upcoming and held emails and its sending history are deleted too. This can't be undone."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:58
+#: admin/class-bhec-admin-triggered.php:112
+#: admin/class-bhec-admin.php:223
+#: admin/class-bhec-admin.php:293
+#: admin/views/settings-status.php:31
+msgid "Sending..."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:59
+msgid "Send this email now instead of waiting?"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:60
+msgid "Send this held email now? The over-mailing guard held it back because this person was emailed recently."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:61
+msgid "Cancel this email? It won't be sent."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:62
+msgid "Cancel the selected email? Only upcoming and held emails change; they won't be sent."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:63
+msgid "Delete the selected email from this list? This can't be undone, and a deleted sent email no longer counts toward the over-mailing guard."
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-triggered.php:65
+#, php-format
+msgid "Cancel %s selected emails? Only upcoming and held ones change; they won't be sent."
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-triggered.php:67
+#, php-format
+msgid "Delete %s selected emails from this list? This can't be undone, and deleted sent emails no longer count toward the over-mailing guard."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:68
+msgid "Delete cancelled, skipped and failed emails, and sent emails older than 30 days? The last 30 days of sent emails stay for the over-mailing guard, and win-back emails all stay so nobody gets one twice for the same absence."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:69
+msgid "Select some emails first."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:70
+#: admin/class-bhec-admin-triggered.php:703
+msgid "Choose an automatic email."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:71
+#: admin/class-bhec-admin-triggered.php:724
+msgid "Enter an order number or an email address."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:72
+#: admin/views/page-triggered-edit.php:58
+msgid "Edit Automatic Email"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:73
+#: admin/class-bhec-admin.php:255
+msgid "Saving..."
+msgstr ""
+
+#. translators: %s: time
+#: admin/class-bhec-admin-triggered.php:75
+#: admin/class-bhec-admin.php:257
+#, php-format
+msgid "Saved at %s"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:76
+#: admin/class-bhec-admin.php:296
+msgid "You have unsaved changes."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:77
+msgid "Add a subject before turning this on."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:78
+msgid "Write a message before turning this on."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:79
+msgid "Enter how long to wait: at least 1."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:80
+#: admin/class-bhec-admin.php:261
+msgid "The message has a coupon, so set a discount for it."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:81
+#: admin/class-bhec-admin.php:224
+msgid "Not in this email"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:82
+#: admin/class-bhec-admin.php:225
+msgid "Set a discount"
+msgstr ""
+
+#. translators: %s: discount percentage
+#: admin/class-bhec-admin-triggered.php:84
+#: admin/class-bhec-admin.php:227
+#, php-format
+msgid "%s% off"
+msgstr ""
+
+#. translators: %s: discount amount with currency
+#: admin/class-bhec-admin-triggered.php:86
+#: admin/class-bhec-admin.php:229
+#, php-format
+msgid "%s off"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:87
+#: admin/class-bhec-admin.php:230
+msgid "free shipping"
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/class-bhec-admin-triggered.php:89
+#: admin/class-bhec-admin.php:232
+#, php-format
+msgid "expires after %s days"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:90
+#: admin/class-bhec-admin.php:233
+msgid "never expires"
+msgstr ""
+
+#. translators: %s: number of hours
+#: admin/class-bhec-admin-triggered.php:92
+#: admin/class-bhec-admin-triggered.php:336
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of hours
+#: admin/class-bhec-admin-triggered.php:94
+#, php-format
+msgid "%s hours"
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/class-bhec-admin-triggered.php:96
+#: admin/class-bhec-admin-triggered.php:338
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of days
+#: admin/class-bhec-admin-triggered.php:98
+#, php-format
+msgid "%s days"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:99
+#: admin/views/page-triggered-edit.php:291
+msgid "Send After"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:100
+#: admin/views/page-triggered-edit.php:291
+msgid "No Order For"
+msgstr ""
+
+#. translators: 1: how long, such as "2 days", 2: automatic email name
+#: admin/class-bhec-admin-triggered.php:102
+#: admin/class-bhec-admin-triggered.php:361
+#, php-format
+msgid "%1$s after \"%2$s\""
+msgstr ""
+
+#. translators: %s: automatic email name
+#: admin/class-bhec-admin-triggered.php:104
+#: admin/class-bhec-admin-triggered.php:359
+#, php-format
+msgid "Right after \"%s\""
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:105
+msgid "Choose the email this one follows."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:106
+#: admin/views/page-triggered-edit.php:122
+msgid "An unsubscribe link is added below your message."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:107
+#: admin/views/page-triggered-edit.php:122
+msgid "An unsubscribe link is added below your message for subscribers. People who unsubscribed get this email without one."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:108
+#: admin/views/page-triggered-edit.php:367
+msgid "Filled in with a recent order's details. The unsubscribe link is a sample."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:109
+msgid "Filled in with a recent order's details. The unsubscribe link is a sample; people who unsubscribed get this email without it."
+msgstr ""
+
+#. translators: %s: list of merge tags
+#: admin/class-bhec-admin-triggered.php:111
+#, php-format
+msgid "This type of email has no order, so these are left blank: %s"
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin-triggered.php:114
+#: admin/class-bhec-admin.php:295
+#, php-format
+msgid "Sent to %s. Check your inbox."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:171
+msgid "Cancelled if they place another order before it sends."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:172
+msgid "One at a time per person: a later completed order moves it later."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:177
+msgid "Cancelled as soon as they pay for any order."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:178
+msgid "One at a time per person: if they leave another order unpaid first, it moves to the newer order."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:179
+msgid "Personalize > Payment Link sends them straight back to pay."
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/class-bhec-admin-triggered.php:184
+#, php-format
+msgid "Orders still unpaid %s day after this email are moved to the trash (see Settings)."
+msgid_plural "Orders still unpaid %s days after this email are moved to the trash (see Settings)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-triggered.php:191
+msgid "Abandoned Cart"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:192
+msgid "A guest enters their email at checkout, then leaves without placing an order."
+msgstr ""
+
+#. translators: %s: how long, such as "1 hour"
+#: admin/class-bhec-admin-triggered.php:194
+#, php-format
+msgid "%s after a guest leaves items in their cart"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:195
+msgid "Right after a guest leaves items in their cart"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:197
+msgid "Cancelled if they place an order first."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:198
+msgid "Guests may have only an email address on file, so give names a fallback, such as {{ customer.first_name ?? 'there' }}. Order details aren't available."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:203
+msgid "Unpaid Order"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:204
+msgid "An order is waiting for payment, or its payment failed."
+msgstr ""
+
+#. translators: %s: how long, such as "2 hours"
+#: admin/class-bhec-admin-triggered.php:206
+#, php-format
+msgid "%s after an order is left unpaid"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:207
+msgid "Right after an order is left unpaid"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:212
+msgid "Follow-Up After Purchase"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:213
+msgid "Checks in some time after an order is completed, for example with an offer."
+msgstr ""
+
+#. translators: %s: how long, such as "7 days"
+#. translators: %s: how long, such as "14 days"
+#. translators: %s: how long, such as "3 days"
+#: admin/class-bhec-admin-triggered.php:215
+#: admin/class-bhec-admin-triggered.php:236
+#: admin/class-bhec-admin-triggered.php:245
+#, php-format
+msgid "%s after an order is completed"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:216
+#: admin/class-bhec-admin-triggered.php:237
+#: admin/class-bhec-admin-triggered.php:246
+msgid "Right after an order is completed"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:221
+msgid "Welcome"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:222
+msgid "Greets a new customer after their first order."
+msgstr ""
+
+#. translators: %s: how long, such as "1 day"
+#: admin/class-bhec-admin-triggered.php:224
+#, php-format
+msgid "%s after a customer's first order"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:225
+msgid "Right after a customer's first order"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:227
+msgid "Sent once per person, ever."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:228
+msgid "A first order counts once it's processing or completed."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:233
+msgid "Review Request"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:234
+msgid "Asks for a review once they've had time to use what they bought."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:238
+msgid "Give them time to receive and try it, such as 7 to 14 days."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:242
+msgid "Product Suggestions"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:243
+msgid "Suggests products that go with what they bought."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:247
+msgid "Personalize > Suggested Products adds up to 4 products, from the cross-sells and upsells set on what they bought."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:251
+msgid "Win-Back"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:252
+msgid "Reaches customers who haven't ordered in a while."
+msgstr ""
+
+#. translators: %s: how long, such as "90 days"
+#: admin/class-bhec-admin-triggered.php:254
+#, php-format
+msgid "When a customer hasn't ordered for %s"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:257
+msgid "Checked every hour, up to 100 people at a time, and sent right away."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:258
+msgid "Sent once per absence: someone gets it again only after ordering and then staying away again."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:259
+msgid "Order details aren't available."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:264
+msgid "Follow-Up"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:265
+msgid "Goes out after another automatic email, to the same person, if the condition you pick holds. Follow-ups of follow-ups make a series."
+msgstr ""
+
+#. translators: %s: how long, such as "2 days"
+#: admin/class-bhec-admin-triggered.php:267
+#, php-format
+msgid "%s after the email it follows"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:268
+msgid "Right after the email it follows"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:270
+msgid "The series stops at the first email whose condition isn't met."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:271
+msgid "Whatever cancels the first email cancels its follow-ups too, such as paying for an unpaid order."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:272
+msgid "Opened and clicked need opens and clicks tracking on (Settings, General)."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:273
+msgid "It has the same order details as the first email."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:278
+msgid "Back in Stock"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:279
+msgid "Customers ask on a sold-out product's page, and get this once it's back in stock."
+msgstr ""
+
+#. translators: %s: how long, such as "1 hour"
+#: admin/class-bhec-admin-triggered.php:281
+#, php-format
+msgid "%s after a product someone asked about is back in stock"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:282
+msgid "As soon as a product someone asked about is back in stock"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:284
+msgid "While this is on, sold-out product pages have an \"Email Me When It's Back\" form."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:285
+msgid "Personalize > Product adds the product's name, link or card."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:286
+msgid "Sent once per request, and only if the product is still in stock when it sends."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:287
+msgid "They asked for it, so it goes even to people who unsubscribed from marketing."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:292
+#: admin/class-bhec-campaign-starters.php:49
+msgid "New Arrivals"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:293
+msgid "Tells customers about new products in categories they've bought from."
+msgstr ""
+
+#. translators: %s: how long, such as "2 hours"
+#: admin/class-bhec-admin-triggered.php:295
+#, php-format
+msgid "%s after you publish a product"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:296
+msgid "Right after you publish a product"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:298
+msgid "Goes to subscribers who bought from the new product's categories."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:299
+msgid "Personalize > Product > New Products adds cards for everything new in their categories from the last 7 days, so products published close together go out in one email."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:300
+msgid "A wait of a few hours gives you time to fix a mistake after publishing."
+msgstr ""
+
+#. translators: 1: when it sends, 2: condition, such as "if they didn't open it"
+#: admin/class-bhec-admin-triggered.php:366
+#, php-format
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:414
+#: includes/class-bhec-gdpr.php:146
+msgid "Order"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:415
+msgid "Order Number"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:416
+#: includes/class-bhec-gdpr.php:183
+msgid "Order Total"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:417
+msgid "Order Date"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:418
+msgid "Items as Cards"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:419
+msgid "Items as a Table"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:420
+msgid "Suggested Products"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:422
+#: includes/class-bhec-gdpr.php:221
+#: includes/class-bhec-merge-tags.php:210
+msgid "Product"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:423
+msgid "Product Name"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:424
+msgid "Product Link"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:425
+msgid "Product Card"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:426
+msgid "New Products"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:433
+msgid "Payment Link"
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:486
+msgid "It goes to people who unsubscribed too."
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-triggered.php:490
+#, php-format
+msgid "The over-mailing guard's daily limit of %s email per person doesn't apply to it, and it doesn't count toward that limit."
+msgid_plural "The over-mailing guard's daily limit of %s emails per person doesn't apply to it, and it doesn't count toward that limit."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of hours
+#: admin/class-bhec-admin-triggered.php:497
+#, php-format
+msgid "The guard still won't send it to the same person twice within %s hour."
+msgid_plural "The guard still won't send it to the same person twice within %s hours."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-triggered.php:501
+msgid "Subscribers still get an unsubscribe link. People who unsubscribed get it without one, since unsubscribing can't stop it."
+msgstr ""
+
+#. translators: 1: number of people, 2: number of hours
+#: admin/class-bhec-admin-triggered.php:534
+#, php-format
+msgid "%1$s person got the same automatic email in the last %2$s hours."
+msgid_plural "%1$s people got the same automatic email in the last %2$s hours."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of people, 2: number of emails
+#: admin/class-bhec-admin-triggered.php:537
+#, php-format
+msgid "%1$s person had already reached the limit of %2$s marketing emails in 24 hours."
+msgid_plural "%1$s people had already reached the limit of %2$s marketing emails in 24 hours."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of emails, 2: reason
+#: admin/class-bhec-admin-triggered.php:540
+#, php-format
+msgid "%1$s: %2$s."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:557
+#: admin/class-bhec-admin-triggered.php:655
+msgid "Automatic email deleted."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:558
+msgid "Turned on. It sends by itself from now on."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:559
+msgid "Turned off. Nothing sends until you turn it back on."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:560
+#: admin/class-bhec-admin-triggered.php:781
+msgid "Email sent."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:561
+msgid "Added to Upcoming. It goes out the next time sending runs, usually within a minute."
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-triggered.php:563
+#, php-format
+msgid "%s email cancelled."
+msgid_plural "%s emails cancelled."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-admin-triggered.php:565
+#, php-format
+msgid "%s email deleted."
+msgid_plural "%s emails deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of entries
+#: admin/class-bhec-admin-triggered.php:567
+#, php-format
+msgid "%s old entry cleared."
+msgid_plural "%s old entries cleared."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-admin-triggered.php:589
+msgid "Choose a type of automatic email."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:609
+msgid "Choose the email this one follows. It can't follow itself or an email that follows it."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:621
+#: admin/class-bhec-admin-triggered.php:674
+msgid "This automatic email no longer exists."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:626
+msgid "Saved."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:633
+msgid "Couldn't create the automatic email. Please try again."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:640
+msgid "Created."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:657
+msgid "Couldn't delete the automatic email."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:683
+msgid "Turned on."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:684
+msgid "Turned off."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:710
+msgid "No order has that number."
+msgstr ""
+
+#. translators: 1: automatic email name, 2: email address
+#: admin/class-bhec-admin-triggered.php:743
+#, php-format
+msgid "\"%1$s\" goes to %2$s the next time sending runs."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:759
+msgid "Sending is paused. Resume it first, then send this email."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:783
+msgid "Not sent. Reload the page to see why."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:805
+msgid "Email cancelled."
+msgstr ""
+
+#: admin/class-bhec-admin-triggered.php:821
+msgid "Select some emails and an action."
+msgstr ""
+
+#: admin/class-bhec-admin.php:97
+msgid "Open Campaigns"
+msgstr ""
+
+#: admin/class-bhec-admin.php:100
+msgid "Email Sending Paused."
+msgstr ""
+
+#. translators: 1: time paused, 2: time it resumes
+#: admin/class-bhec-admin.php:103
+#, php-format
+msgid "Your mail provider asked us to slow down at %1$s, so nothing is sent until %2$s. It resumes by itself."
+msgstr ""
+
+#: admin/class-bhec-admin.php:120
+#: admin/views/page-triggered.php:46
+msgid "Review Held Emails"
+msgstr ""
+
+#: admin/class-bhec-admin.php:123
+msgid "Automatic Emails Paused."
+msgstr ""
+
+#: admin/class-bhec-admin.php:125
+msgid "Nobody gets automatic emails until you resume them. Check your automatic emails and the held ones first."
+msgstr ""
+
+#: admin/class-bhec-admin.php:138
+#: admin/class-bhec-admin.php:139
+#: admin/class-bhec-dashboard-widget.php:24
+msgid "Email Campaigns"
+msgstr ""
+
+#: admin/class-bhec-admin.php:148
+#: admin/class-bhec-dashboard-widget.php:82
+#: admin/class-bhec-dashboard-widget.php:152
+#: admin/views/page-analytics.php:162
+#: admin/views/page-campaigns.php:17
+msgid "Campaigns"
+msgstr ""
+
+#: admin/class-bhec-admin.php:151
+#: admin/class-bhec-logs-list-table.php:261
+#: admin/views/page-analytics.php:175
+#: admin/views/page-triggered.php:23
+msgid "Automatic Emails"
+msgstr ""
+
+#: admin/class-bhec-admin.php:154
+#: admin/class-bhec-dashboard-widget.php:84
+#: admin/views/page-customers.php:30
+msgid "Subscribers"
+msgstr ""
+
+#: admin/class-bhec-admin.php:155
+#: admin/class-bhec-dashboard-widget.php:154
+#: admin/views/page-analytics.php:17
+msgid "Reports"
+msgstr ""
+
+#: admin/class-bhec-admin.php:156
+#: admin/views/page-settings.php:16
+msgid "Settings"
+msgstr ""
+
+#. translators: %s: campaign name
+#: admin/class-bhec-admin.php:222
+#, php-format
+msgid "Delete \"%s\"? This can't be undone."
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-admin.php:235
+#, php-format
+msgid "Replies to %s"
+msgstr ""
+
+#: admin/class-bhec-admin.php:236
+msgid "Replies to your store email"
+msgstr ""
+
+#. translators: %s: number of files
+#: admin/class-bhec-admin.php:238
+#, php-format
+msgid "%s attachment"
+msgstr ""
+
+#. translators: %s: number of files
+#: admin/class-bhec-admin.php:240
+#, php-format
+msgid "%s attachments"
+msgstr ""
+
+#: admin/class-bhec-admin.php:241
+msgid "with copies"
+msgstr ""
+
+#: admin/class-bhec-admin.php:242
+msgid "Couldn't count. Try fewer filters."
+msgstr ""
+
+#: admin/class-bhec-admin.php:243
+msgid "person will get this"
+msgstr ""
+
+#: admin/class-bhec-admin.php:244
+msgid "people will get this"
+msgstr ""
+
+#: admin/class-bhec-admin.php:245
+msgid "Nobody matches these filters"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin.php:247
+#: admin/class-bhec-admin.php:249
+#, php-format
+msgid "and %s more"
+msgstr ""
+
+#: admin/class-bhec-admin.php:250
+#: admin/views/page-campaign-edit.php:476
+msgid "See Who"
+msgstr ""
+
+#: admin/class-bhec-admin.php:251
+msgid "Hide List"
+msgstr ""
+
+#. translators: %s: segment name
+#: admin/class-bhec-admin.php:253
+#, php-format
+msgid "Saved segment \"%s\"."
+msgstr ""
+
+#: admin/class-bhec-admin.php:254
+#: admin/views/page-campaign-edit.php:39
+msgid "Edit Campaign"
+msgstr ""
+
+#: admin/class-bhec-admin.php:258
+msgid "Add a subject before sending."
+msgstr ""
+
+#: admin/class-bhec-admin.php:259
+msgid "Write a message before sending."
+msgstr ""
+
+#: admin/class-bhec-admin.php:260
+msgid "Pick a date and time to send it."
+msgstr ""
+
+#: admin/class-bhec-admin.php:262
+#: admin/class-bhec-logs-list-table.php:182
+#: admin/views/page-campaign-edit.php:88
+#: admin/views/page-campaign-view.php:167
+#: admin/views/page-triggered-edit.php:83
+#: admin/views/settings-logs.php:133
+#: includes/class-bhec-gdpr.php:319
+msgid "Subject"
+msgstr ""
+
+#: admin/class-bhec-admin.php:263
+msgid "Nobody To Send To"
+msgstr ""
+
+#: admin/class-bhec-admin.php:264
+msgid "No subscribed customers match these filters. Change them under Who Gets This."
+msgstr ""
+
+#: admin/class-bhec-admin.php:265
+msgid "Send This Campaign?"
+msgstr ""
+
+#: admin/class-bhec-admin.php:266
+msgid "Schedule This Campaign?"
+msgstr ""
+
+#: admin/class-bhec-admin.php:267
+msgid "everyone who matches"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin.php:271
+#, php-format
+msgid "%s people"
+msgstr ""
+
+#. translators: 1: number of people, 2: date and time
+#: admin/class-bhec-admin.php:273
+#, php-format
+msgid "It goes to %1$s on %2$s."
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin.php:275
+#, php-format
+msgid "It goes to %s now."
+msgstr ""
+
+#: admin/class-bhec-admin.php:276
+msgid "Who gets it is worked out again when it sends, so the number can change."
+msgstr ""
+
+#. translators: 1: number of people, 2: number of days
+#: admin/class-bhec-admin.php:278
+#, php-format
+msgid "%1$s more person got another campaign in the last %2$s days."
+msgstr ""
+
+#. translators: 1: number of people, 2: number of days
+#: admin/class-bhec-admin.php:280
+#, php-format
+msgid "%1$s more people got another campaign in the last %2$s days."
+msgstr ""
+
+#: admin/class-bhec-admin.php:281
+msgid "They'll be held back, not sent. You can send them anyway from the campaign's page."
+msgstr ""
+
+#. translators: 1: number of people, 2: number of days
+#: admin/class-bhec-admin.php:283
+#, php-format
+msgid "All %1$s people it matches got another campaign in the last %2$s days, so it will be held back for everyone. You can still send them anyway from the campaign's page."
+msgstr ""
+
+#: admin/class-bhec-admin.php:284
+msgid "Create and Hold"
+msgstr ""
+
+#. translators: 1: campaign name, 2: date
+#: admin/class-bhec-admin.php:286
+#, php-format
+msgid "You sent a campaign with the same subject, \"%1$s\", on %2$s. Check this isn't a repeat."
+msgstr ""
+
+#: admin/class-bhec-admin.php:287
+#: admin/views/page-campaign-edit.php:383
+#: admin/views/page-campaign-edit.php:384
+msgid "Schedule"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin.php:289
+#, php-format
+msgid "Send to %s People"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-admin.php:291
+#, php-format
+msgid "Send to %s Person"
+msgstr ""
+
+#: admin/class-bhec-admin.php:292
+#: admin/class-bhec-automatic-sends-list-table.php:286
+msgid "Send Now"
+msgstr ""
+
+#: admin/class-bhec-admin.php:355
+msgid "Send the held emails anyway? These people were emailed recently."
+msgstr ""
+
+#: admin/class-bhec-admin.php:356
+msgid "Leave the held emails unsent? They will not go out."
+msgstr ""
+
+#: admin/class-bhec-admin.php:366
+msgid "Add an Image"
+msgstr ""
+
+#: admin/class-bhec-admin.php:367
+msgid "Add to Message"
+msgstr ""
+
+#: admin/class-bhec-admin.php:368
+msgid "Choose Attachments"
+msgstr ""
+
+#: admin/class-bhec-admin.php:369
+#: admin/views/page-campaign-edit.php:307
+msgid "Remove"
+msgstr ""
+
+#: admin/class-bhec-admin.php:370
+#: admin/class-bhec-logs-list-table.php:302
+msgid "(No subject)"
+msgstr ""
+
+#. translators: %s: number of characters
+#: admin/class-bhec-admin.php:372
+#, php-format
+msgid "%s characters"
+msgstr ""
+
+#. translators: %s: number of characters
+#: admin/class-bhec-admin.php:374
+#, php-format
+msgid "%s characters. Inboxes on phones cut long subjects short, so put the important words first."
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:71
+#: admin/views/page-triggered-edit.php:203
+msgid "When It Sends"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:76
+#: admin/class-bhec-report-automatic-list-table.php:67
+#: admin/class-bhec-report-campaigns-list-table.php:95
+#: admin/views/page-analytics-campaign.php:111
+#: admin/views/page-analytics.php:91
+msgid "Revenue"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:86
+msgid "On"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:109
+#: admin/class-bhec-campaigns-list-table.php:197
+#: admin/class-bhec-report-automatic-list-table.php:103
+msgid "Edit"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:113
+msgid "Turn Off"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:113
+msgid "Turn On"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:119
+#: admin/class-bhec-automatic-sends-list-table.php:182
+#: admin/class-bhec-campaigns-list-table.php:211
+#: admin/views/page-triggered-edit.php:331
+msgid "Delete"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:128
+msgid "Never sends: Guest Cart Capture is off in Settings."
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:131
+msgid "Always sends, even to people who unsubscribed"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-automatic-emails-list-table.php:151
+#: admin/views/page-triggered-edit.php:45
+#, php-format
+msgid "%s upcoming"
+msgid_plural "%s upcoming"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of emails
+#: admin/class-bhec-automatic-emails-list-table.php:159
+#: admin/class-bhec-campaigns-list-table.php:240
+#: admin/class-bhec-dashboard-widget.php:140
+#: admin/views/page-triggered-edit.php:47
+#, php-format
+msgid "%s held back"
+msgid_plural "%s held back"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:230
+#: admin/views/page-triggered.php:77
+msgid "Send to One Order or Customer"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:236
+#: admin/class-bhec-report-automatic-list-table.php:144
+msgid "No automatic emails yet"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:237
+msgid "An automatic email sends by itself when something happens in your store, to the one customer it's about. You can set up these kinds:"
+msgstr ""
+
+#: admin/class-bhec-automatic-emails-list-table.php:246
+msgid "Create Your First Automatic Email"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:44
+#: admin/class-bhec-automatic-sends-list-table.php:314
+msgid "Upcoming"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:45
+#: admin/class-bhec-automatic-sends-list-table.php:316
+#: admin/class-bhec-campaign-recipients-list-table.php:51
+#: admin/class-bhec-campaign-recipients-list-table.php:189
+msgid "Held"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:171
+msgid "Person"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:181
+#: admin/class-bhec-automatic-sends-list-table.php:291
+#: admin/views/page-campaign-edit.php:508
+#: admin/views/page-customers.php:77
+#: admin/views/page-customers.php:117
+#: admin/views/page-triggered.php:110
+msgid "Cancel"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:193
+#: admin/class-bhec-campaign-recipients-list-table.php:143
+#: admin/class-bhec-logs-list-table.php:202
+msgid "All"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:227
+msgid "Filter by Automatic Email"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:228
+msgid "All automatic emails"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:238
+#: admin/class-bhec-logs-list-table.php:267
+msgid "Filter"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:246
+msgid "Clear Old Entries"
+msgstr ""
+
+#. translators: %s: email address
+#: admin/class-bhec-automatic-sends-list-table.php:256
+#: admin/class-bhec-subscribers-list-table.php:181
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#. translators: %s: order number
+#: admin/class-bhec-automatic-sends-list-table.php:271
+#, php-format
+msgid "Order #%s"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:286
+#: admin/class-bhec-campaign-recipients-list-table.php:174
+msgid "Send Anyway"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:299
+msgid "(Deleted)"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:336
+msgid "Held back by the over-mailing guard"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:342
+msgid "Not subscribed, or a repeat of another email"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:346
+msgid "Waits until this automatic email is turned on"
+msgstr ""
+
+#. translators: %s: error from the mail provider
+#: admin/class-bhec-automatic-sends-list-table.php:349
+#, php-format
+msgid "Trying again after an error: %s"
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:370
+#: admin/class-bhec-logs-list-table.php:337
+msgid "No emails match."
+msgstr ""
+
+#: admin/class-bhec-automatic-sends-list-table.php:373
+msgid "Nothing yet. Emails show up here when something in your store sets off an automatic email, such as an order being completed."
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:50
+#: admin/class-bhec-campaign-recipients-list-table.php:187
+msgid "Waiting"
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:129
+#: admin/class-bhec-logs-list-table.php:181
+msgid "Recipient"
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:130
+msgid "What Happened"
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:176
+msgid "Try Again"
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:198
+msgid "Unsubscribed, or the campaign was stopped"
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:220
+#: admin/views/page-campaign-view.php:175
+msgid "opened"
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:223
+#: admin/views/page-campaign-view.php:175
+msgid "clicked"
+msgstr ""
+
+#. translators: %s: order total
+#: admin/class-bhec-campaign-recipients-list-table.php:227
+#, php-format
+msgid "ordered (%s)"
+msgstr ""
+
+#. translators: 1: earlier actions, such as "opened, clicked", 2: the last one
+#: admin/class-bhec-campaign-recipients-list-table.php:234
+#, php-format
+msgid "%1$s and %2$s"
+msgstr ""
+
+#. translators: %s: time
+#: admin/class-bhec-campaign-recipients-list-table.php:245
+#, php-format
+msgid "Next try %s"
+msgstr ""
+
+#: admin/class-bhec-campaign-recipients-list-table.php:251
+msgid "Nobody here."
+msgstr ""
+
+#. translators: %s: the customer's first name
+#: admin/class-bhec-campaign-starters.php:22
+#, php-format
+msgid "Hi %s,"
+msgstr ""
+
+#. translators: %s: the customer's first name
+#: admin/class-bhec-campaign-starters.php:22
+msgid "there"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:23
+msgid "Thanks,"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:27
+msgid "Store News"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:28
+msgid "A short letter about what's going on at your store."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:29
+msgid "Store news"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:30
+msgid "News from {{ store.name }}"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:32
+msgid "Here's what's been happening at our store lately."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:33
+msgid "Write your news here: new stock on the way, an event, a change to opening hours or shipping."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:34
+msgid "Visit the Store"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:38
+msgid "Sale"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:39
+msgid "Tell customers a sale is on, with a button to shop."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:40
+msgid "Sale announcement"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:41
+msgid "Our sale is on, {{ customer.first_name ?? 'friend' }}"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:42
+msgid "The sale is on"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:44
+msgid "Our sale starts today, with savings across the store. It won't last long, so take a look while your favourites are in stock."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:45
+msgid "Shop the Sale"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:50
+msgid "Show off your newest products, with photos and prices."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:51
+msgid "New arrivals"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:52
+msgid "Just in at {{ store.name }}"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:54
+msgid "Fresh stock just landed. Here are a few of our newest products."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:56
+msgid "See Everything New"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:60
+msgid "Thank You"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:61
+msgid "Thank your customers for their support."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:62
+msgid "Thank you"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:63
+msgid "Thank you from {{ store.name }}"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:65
+msgid "We wanted to say thank you. Every order helps our small store keep going, and we're grateful you chose us."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:66
+msgid "If there's anything you'd like to see us stock, just reply to this email."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:74
+msgid "A Coupon for You"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:75
+msgid "Give each customer their own discount code."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:76
+msgid "Personal coupon"
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:77
+msgid "A little something for you, {{ customer.first_name ?? 'friend' }}"
+msgstr ""
+
+#. translators: %s: discount, such as 10%
+#: admin/class-bhec-campaign-starters.php:80
+#, php-format
+msgid "Here's a code just for you: %s off your next order."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:82
+msgid "It works once and expires in 14 days."
+msgstr ""
+
+#: admin/class-bhec-campaign-starters.php:83
+msgid "Use It Now"
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:129
+#: admin/views/page-campaign-view.php:107
+#: admin/views/page-campaign-view.php:235
+msgid "Recipients"
+msgstr ""
+
+#. translators: %s: number of campaigns
+#. translators: %s: number of people
+#: admin/class-bhec-campaigns-list-table.php:145
+#: admin/class-bhec-subscribers-list-table.php:140
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of campaigns
+#: admin/class-bhec-campaigns-list-table.php:147
+#, php-format
+msgid "Draft <span class=\"count\">(%s)</span>"
+msgid_plural "Drafts <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of campaigns
+#: admin/class-bhec-campaigns-list-table.php:149
+#, php-format
+msgid "Scheduled <span class=\"count\">(%s)</span>"
+msgid_plural "Scheduled <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of campaigns
+#: admin/class-bhec-campaigns-list-table.php:151
+#, php-format
+msgid "Sending <span class=\"count\">(%s)</span>"
+msgid_plural "Sending <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of campaigns
+#: admin/class-bhec-campaigns-list-table.php:153
+#, php-format
+msgid "Sent <span class=\"count\">(%s)</span>"
+msgid_plural "Sent <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of campaigns
+#: admin/class-bhec-campaigns-list-table.php:155
+#, php-format
+msgid "Failed <span class=\"count\">(%s)</span>"
+msgid_plural "Failed <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-campaigns-list-table.php:199
+msgid "View"
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:204
+#: admin/views/page-campaign-view.php:36
+msgid "Duplicate"
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:281
+msgid "No campaigns match."
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:286
+msgid "Send Your First Campaign"
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:287
+msgid "A campaign is one email you send to your customers, like a sale announcement or a new arrivals update."
+msgstr ""
+
+#. translators: %s: link to Settings, Status
+#: admin/class-bhec-campaigns-list-table.php:291
+#, php-format
+msgid "Check that %s says your email is working."
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:292
+msgid "Settings, Status"
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:294
+msgid "Pick a layout below. Every word can be changed."
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:295
+msgid "Send yourself a test from the editor, then send it or schedule it."
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:309
+msgid "Blank"
+msgstr ""
+
+#: admin/class-bhec-campaigns-list-table.php:310
+msgid "Start from an empty message."
+msgstr ""
+
+#: admin/class-bhec-dashboard-widget.php:83
+#: admin/views/page-analytics.php:47
+#: admin/views/page-analytics.php:75
+#: admin/views/settings-logs.php:65
+msgid "Emails Sent"
+msgstr ""
+
+#: admin/class-bhec-dashboard-widget.php:99
+msgid "Sending Now"
+msgstr ""
+
+#: admin/class-bhec-dashboard-widget.php:111
+msgid "Recent Campaigns"
+msgstr ""
+
+#: admin/class-bhec-dashboard-widget.php:114
+msgid "No campaigns yet."
+msgstr ""
+
+#: admin/class-bhec-dashboard-widget.php:115
+msgid "Create Your First Campaign"
+msgstr ""
+
+#. translators: 1: number of emails, 2: open rate
+#: admin/class-bhec-dashboard-widget.php:126
+#, php-format
+msgid "%1$s sent, %2$s opened"
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:184
+#: admin/views/settings-logs.php:135
+msgid "Result"
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:257
+msgid "Filter by Campaign"
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:259
+msgid "All Emails"
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:290
+msgid "View Details"
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:295
+msgid "Emails to This Person"
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:341
+msgid "No emails logged yet"
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:343
+msgid "The email log is off. Turn it on below to keep a record of every email this plugin sends."
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:345
+msgid "Every email this plugin sends shows up here: who got it, what it said and whether it went through."
+msgstr ""
+
+#: admin/class-bhec-logs-list-table.php:349
+#: admin/views/page-analytics.php:30
+msgid "Create a Campaign"
+msgstr ""
+
+#. translators: 1: number of emails, 2: open rate, 3: click rate
+#: admin/class-bhec-report-automatic-list-table.php:96
+#: admin/class-bhec-report-campaigns-list-table.php:131
+#, php-format
+msgid "%1$s sent, %2$s opened, %3$s clicked"
+msgstr ""
+
+#: admin/class-bhec-report-automatic-list-table.php:145
+msgid "Automatic emails go out by themselves, like a reminder about an unpaid order or a thank-you after someone buys."
+msgstr ""
+
+#: admin/class-bhec-report-automatic-list-table.php:149
+msgid "Set Up an Automatic Email"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/class-bhec-report-campaigns-list-table.php:122
+#, php-format
+msgid "Sent %s"
+msgstr ""
+
+#: admin/class-bhec-report-campaigns-list-table.php:139
+msgid "View Campaign"
+msgstr ""
+
+#: admin/class-bhec-report-campaigns-list-table.php:140
+#: admin/views/page-campaign-view.php:127
+msgid "Full Report"
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/class-bhec-report-campaigns-list-table.php:195
+#, php-format
+msgid "No campaigns went out in the last %s days."
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:118
+msgid "Last Email"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-subscribers-list-table.php:142
+#, php-format
+msgid "Subscribed <span class=\"count\">(%s)</span>"
+msgid_plural "Subscribed <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-subscribers-list-table.php:144
+#, php-format
+msgid "Waiting for Confirmation <span class=\"count\">(%s)</span>"
+msgid_plural "Waiting for Confirmation <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-subscribers-list-table.php:146
+#, php-format
+msgid "Unsubscribed <span class=\"count\">(%s)</span>"
+msgid_plural "Unsubscribed <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-subscribers-list-table.php:148
+#, php-format
+msgid "Bounced <span class=\"count\">(%s)</span>"
+msgid_plural "Bounced <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of people
+#: admin/class-bhec-subscribers-list-table.php:150
+#, php-format
+msgid "Not Subscribed <span class=\"count\">(%s)</span>"
+msgid_plural "Not Subscribed <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-bhec-subscribers-list-table.php:206
+msgid "Email History"
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:232
+msgid "Only they can confirm it"
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:232
+msgid "Only they can opt back in"
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:268
+msgid "Nobody matches."
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:272
+msgid "No subscribers yet"
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:273
+msgid "Everyone who orders from your store or signs up for your emails shows up here, with whether they get your marketing email."
+msgstr ""
+
+#. translators: %s: shortcode
+#: admin/class-bhec-subscribers-list-table.php:277
+#, php-format
+msgid "Add a sign-up form to any page with the %s shortcode."
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:282
+msgid "Moving from another email tool? Import its unsubscribe list first, so nobody who opted out gets emailed."
+msgstr ""
+
+#: admin/class-bhec-subscribers-list-table.php:283
+#: admin/views/page-customers.php:31
+#: admin/views/page-customers.php:96
+msgid "Import Opt-Outs"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:32
+msgid "Back to Campaign"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/views/page-analytics-campaign.php:42
+#: admin/views/page-campaign-view.php:53
+#, php-format
+msgid "Started %s"
+msgstr ""
+
+#. translators: %s: email subject
+#: admin/views/page-analytics-campaign.php:52
+#, php-format
+msgid "Subject: %s"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:62
+msgid "Nothing to report yet"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:63
+msgid "This campaign hasn't sent any emails. Once it goes out, you'll see who opened it, what they clicked and what they bought."
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:64
+msgid "Open the Campaign"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:77
+#: admin/views/page-analytics.php:48
+#: admin/views/page-campaign-edit.php:122
+msgid "Opens"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:78
+#: admin/views/page-analytics-campaign.php:149
+#: admin/views/page-analytics.php:49
+#: admin/views/page-campaign-edit.php:123
+msgid "Clicks"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/views/page-analytics-campaign.php:98
+#, php-format
+msgid "%s failed"
+msgid_plural "%s failed"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/page-analytics-campaign.php:120
+msgid "Opens and Clicks Over Time"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:123
+msgid "Nobody has opened this campaign or clicked a link in it yet."
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:129
+msgid "Opens and clicks for this campaign each day since it went out. The numbers are in the table below."
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:132
+#: admin/views/page-analytics.php:150
+msgid "Day"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:139
+msgid "Most Clicked Links"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:142
+msgid "Nobody has clicked a link in this campaign yet."
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:148
+#: includes/class-bhec-gdpr.php:181
+msgid "Link"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:150
+msgid "Share of Clicks"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:168
+msgid "Download Lists"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:170
+msgid "Spreadsheet files (CSV) with each person's email address and name."
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:172
+msgid "Who Got It"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:174
+msgid "Who Opened It"
+msgstr ""
+
+#: admin/views/page-analytics-campaign.php:177
+msgid "Failed Emails"
+msgstr ""
+
+#: admin/views/page-analytics.php:21
+msgid "That campaign doesn't exist any more. Here are the reports for all your emails."
+msgstr ""
+
+#: admin/views/page-analytics.php:28
+msgid "No emails sent yet"
+msgstr ""
+
+#: admin/views/page-analytics.php:29
+msgid "Reports show how your emails do: how many people open them, click through and buy. Send your first campaign and its numbers show up here."
+msgstr ""
+
+#: admin/views/page-analytics.php:54
+msgid "Period"
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/views/page-analytics.php:59
+#, php-format
+msgid "Last %s Days"
+msgstr ""
+
+#. translators: 1: first day of the period, 2: today
+#: admin/views/page-analytics.php:67
+#, php-format
+msgid "%1$s to %2$s"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/views/page-analytics.php:78
+#, php-format
+msgid "%s from automatic emails"
+msgstr ""
+
+#. translators: %s: percentage
+#: admin/views/page-analytics.php:99
+#, php-format
+msgid "%s of emails sent"
+msgstr ""
+
+#: admin/views/page-analytics.php:106
+msgid "Activity"
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/views/page-analytics.php:112
+#, php-format
+msgid "Nothing was sent, opened or clicked in the last %s days."
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/views/page-analytics.php:122
+#, php-format
+msgid "Emails sent each day in the last %s days. The numbers are in the table below."
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/views/page-analytics.php:129
+#, php-format
+msgid "Opens and clicks each day in the last %s days. The numbers are in the table below."
+msgstr ""
+
+#: admin/views/page-analytics.php:163
+msgid "Campaigns that sent in this period, with their results so far."
+msgstr ""
+
+#: admin/views/page-analytics.php:176
+msgid "What each automatic email sent in this period, and what came of it."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:38
+#: admin/views/page-campaign-view.php:34
+msgid "All Campaigns"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:39
+msgid "New Campaign"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:46
+msgid "Start From a Layout:"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:63
+msgid "This campaign did not send. Check it over, then send or schedule it again."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:76
+msgid "Campaign Name"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:78
+msgid "Campaign name"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:81
+#: admin/views/page-triggered-edit.php:76
+msgid "Only you see this. Customers see the subject."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:95
+#: admin/views/page-triggered-edit.php:90
+msgid "What your customers see in their inbox"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:101
+msgid "Test a Second Subject"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:102
+msgid "Each subject goes to half of a test group. After the wait, the subject more people opened (or clicked) goes to everyone else. Leave it empty to send one subject."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:104
+msgid "Opens and clicks tracking is off (Settings, General), so the first subject always wins."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:107
+msgid "Second Subject"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:112
+msgid "Test Group"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:113
+msgid "% of recipients"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:116
+msgid "Wait"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:120
+msgid "Winner Has More"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/views/page-campaign-edit.php:128
+#, php-format
+msgid "Needs at least %s recipients; with fewer, everyone gets the first subject."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:136
+#: admin/views/page-triggered-edit.php:96
+msgid "Message"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:137
+#: admin/views/page-triggered-edit.php:97
+msgid "Add to the Message"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:139
+#: admin/views/page-triggered-edit.php:99
+msgid "Add Image"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:141
+#: admin/views/page-campaign-edit.php:495
+#: admin/views/page-triggered-edit.php:101
+#: admin/views/page-triggered-edit.php:347
+msgid "Add Product"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:144
+#: admin/views/page-triggered-edit.php:102
+msgid "Add Coupon"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:174
+#: admin/views/page-triggered-edit.php:130
+msgid "Coupon"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:179
+#: admin/views/page-triggered-edit.php:135
+msgid "Each person gets their own code wherever the message says {{ coupon }}. Use Add Coupon above the message to place it."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:182
+#: admin/views/page-triggered-edit.php:138
+msgid "Discount"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:186
+#: admin/views/page-triggered-edit.php:142
+msgid "% off the order"
+msgstr ""
+
+#. translators: %s: currency symbol
+#: admin/views/page-campaign-edit.php:188
+#: admin/views/page-triggered-edit.php:144
+#, php-format
+msgid "%s off the order"
+msgstr ""
+
+#. translators: %s: currency symbol
+#: admin/views/page-campaign-edit.php:190
+#: admin/views/page-triggered-edit.php:146
+#, php-format
+msgid "%s off each product"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:195
+#: admin/views/page-triggered-edit.php:151
+msgid "Expires After"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:198
+msgid "days (0 for never)"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:202
+#: admin/views/page-triggered-edit.php:158
+msgid "Minimum Spend"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:203
+#: admin/views/page-campaign-edit.php:207
+#: admin/views/page-campaign-edit.php:253
+#: admin/views/page-campaign-edit.php:257
+#: admin/views/page-triggered-edit.php:159
+msgid "None"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:206
+msgid "Maximum Spend"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:210
+#: admin/views/page-triggered-edit.php:162
+msgid "Uses Per Code"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:214
+#: admin/views/page-triggered-edit.php:166
+msgid "Also gives free shipping"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:215
+#: admin/views/page-triggered-edit.php:167
+msgid "Can't be combined with other coupons"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:220
+msgid "Limit to Products or Categories"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:244
+msgid "Only These Products"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:245
+msgid "Any product"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:248
+msgid "Only These Categories"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:249
+msgid "Any category"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:252
+msgid "Not These Products"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:256
+msgid "Not These Categories"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:263
+#: admin/views/page-triggered-edit.php:171
+msgid "Code Starts With"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:265
+#: admin/views/page-triggered-edit.php:173
+msgid "Codes look like SALE_j9t3fx9rh9. Unused codes are deleted after they expire."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:274
+#: admin/views/page-triggered-edit.php:180
+msgid "More Options"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:281
+msgid "Replies Go To"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:282
+msgid "Your store email"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:285
+msgid "Reply Name"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:289
+#: admin/views/page-triggered-edit.php:186
+msgid "Layout"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:298
+#: admin/views/page-triggered-edit.php:195
+msgid "WooCommerce Default uses the header, colors and footer of your store emails."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:301
+msgid "Attachments"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:311
+msgid "Add Attachment"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:315
+msgid "Copies and Recipient Address"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:318
+msgid "BCC"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:320
+msgid "Gets a copy of every email, so one address here receives one email per customer."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:323
+msgid "CC"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:325
+msgid "Customers can see CC addresses."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:328
+#: admin/views/settings-status.php:116
+msgid "Send To"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:330
+msgid "Leave as {{ customer.email }} unless you know you need something else."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:340
+#: admin/views/page-campaign-edit.php:371
+#: admin/views/page-campaign-edit.php:383
+#: admin/views/page-campaign-edit.php:384
+#: admin/views/page-triggered-edit.php:324
+#: admin/views/page-triggered.php:111
+msgid "Send"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:344
+msgid "Counting who gets this..."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:348
+msgid "When to Send"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:349
+msgid "Send now"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:350
+msgid "Schedule for later"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:352
+msgid "Send At"
+msgstr ""
+
+#. translators: %s: time zone, such as UTC+8 or Asia/Singapore
+#: admin/views/page-campaign-edit.php:357
+#, php-format
+msgid "Store time (%s)"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:364
+#: admin/views/page-campaign-edit.php:517
+#: admin/views/page-triggered-edit.php:317
+#: admin/views/page-triggered-edit.php:358
+msgid "Preview"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:365
+#: admin/views/page-triggered-edit.php:318
+msgid "Send a Test"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:368
+#: admin/views/page-triggered-edit.php:321
+msgid "Send a Test To"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:373
+msgid "Filled in with a recent customer's details. The unsubscribe link is a sample."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:378
+msgid "Save Draft"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:392
+msgid "Who Gets This"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:394
+msgid "Subscribed customers with a completed, processing or on-hold order. Narrow it down below. Nobody gets the same campaign twice."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:398
+msgid "Start From a Saved Segment"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:400
+msgid "Choose a segment"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:409
+msgid "Ordered Between"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:411
+msgid "From"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:413
+#: admin/views/settings-logs.php:132
+msgid "To"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:421
+#: admin/views/page-campaign-edit.php:432
+msgid "At least"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:423
+#: admin/views/page-campaign-edit.php:434
+msgid "at most"
+msgstr ""
+
+#. translators: %s: currency symbol
+#: admin/views/page-campaign-edit.php:430
+#, php-format
+msgid "Total Spent (%s)"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:440
+msgid "Billing Country"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:441
+msgid "Any country"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:450
+msgid "Order Status"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:460
+msgid "Also include people who signed up but haven't ordered"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:465
+msgid "Leave Out a Segment"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:467
+msgid "Nobody"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:477
+msgid "Save as Segment"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:483
+msgid "Segment Name"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:484
+msgid "Segment name"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:485
+#: admin/views/page-triggered-edit.php:336
+msgid "Save"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:496
+#: admin/views/page-triggered-edit.php:348
+msgid "Add a Product Card"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:497
+#: admin/views/page-triggered-edit.php:349
+msgid "Search your products"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:500
+#: admin/views/page-triggered-edit.php:352
+msgid "Shows the photo, name, price and a link. Cards placed next to each other line up in a row."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:520
+#: admin/views/page-triggered-edit.php:361
+msgid "Preview Width"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:521
+#: admin/views/page-triggered-edit.php:362
+msgid "Desktop"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:522
+#: admin/views/page-triggered-edit.php:363
+msgid "Mobile"
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:526
+msgid "Filled in with a recent customer's details."
+msgstr ""
+
+#: admin/views/page-campaign-edit.php:527
+#: admin/views/page-campaign-view.php:216
+#: admin/views/page-triggered-edit.php:368
+msgid "Email Preview"
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/views/page-campaign-view.php:47
+#, php-format
+msgid "Finished %s"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:78
+msgid "Paused. Nothing more goes out until you resume."
+msgstr ""
+
+#: admin/views/page-campaign-view.php:80
+msgid "Sending carries on in the background, even with this page closed. Numbers here update every few seconds."
+msgstr ""
+
+#: admin/views/page-campaign-view.php:86
+msgid "Resume Sending"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:89
+msgid "Stop Sending Faster"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:90
+msgid "Send Faster"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:91
+msgid "Pause"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/views/page-campaign-view.php:94
+#, php-format
+msgid "Stop this campaign? The %s emails still waiting will not be sent, and you can't restart it. Duplicate it if you want to send it again later."
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/views/page-campaign-view.php:95
+msgid "Stop Sending"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:99
+msgid "Send Faster keeps sending without the minute breaks while this page stays open. Your speed limits still apply."
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/views/page-campaign-view.php:136
+#: admin/views/page-triggered.php:35
+#, php-format
+msgid "%s email held back"
+msgid_plural "%s emails held back"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/page-campaign-view.php:139
+msgid "These people got another email recently, so the over-mailing guard held this campaign back for them. The Held tab below shows who and why."
+msgstr ""
+
+#: admin/views/page-campaign-view.php:142
+msgid "Send Them Anyway"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:143
+msgid "Don't Send"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/views/page-campaign-view.php:154
+#, php-format
+msgid "%s email failed"
+msgid_plural "%s emails failed"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/page-campaign-view.php:157
+msgid "Your mail provider turned them down. The Failed tab below shows the reason for each."
+msgstr ""
+
+#: admin/views/page-campaign-view.php:159
+msgid "Try Them Again"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:178
+msgid "Subject Test"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:180
+msgid "Too few recipients to test, so everyone got the first subject."
+msgstr ""
+
+#. translators: 1: percentage, 2: "opened" or "clicked", 3: number of people
+#: admin/views/page-campaign-view.php:189
+#, php-format
+msgid "%1$s %2$s, of %3$s sent"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:191
+msgid "Winner"
+msgstr ""
+
+#. translators: %s: number of people
+#: admin/views/page-campaign-view.php:204
+#, php-format
+msgid "The winner goes to the other %s person once the test emails are out and the wait is over."
+msgid_plural "The winner goes to the other %s people once the test emails are out and the wait is over."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of people, 2: time
+#: admin/views/page-campaign-view.php:206
+#, php-format
+msgid "The winner goes to the other %1$s person at %2$s."
+msgid_plural "The winner goes to the other %1$s people at %2$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/page-campaign-view.php:217
+msgid "Shown with a recent customer's details."
+msgstr ""
+
+#: admin/views/page-campaign-view.php:221
+msgid "Sent To"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:229
+msgid "Replies go to"
+msgstr ""
+
+#: admin/views/page-campaign-view.php:245
+msgid "Search Recipients"
+msgstr ""
+
+#: admin/views/page-campaigns.php:18
+msgid "Add New Campaign"
+msgstr ""
+
+#: admin/views/page-campaigns.php:31
+msgid "Search Campaigns"
+msgstr ""
+
+#: admin/views/page-customers.php:33
+msgid "Export"
+msgstr ""
+
+#: admin/views/page-customers.php:42
+msgid "Automatic opt-in is on: customers get your marketing email unless they opt out."
+msgstr ""
+
+#: admin/views/page-customers.php:44
+msgid "Customers only get your marketing email after they opt in."
+msgstr ""
+
+#: admin/views/page-customers.php:47
+msgid "Change in Settings"
+msgstr ""
+
+#: admin/views/page-customers.php:51
+msgid "Unsubscribe Someone"
+msgstr ""
+
+#: admin/views/page-customers.php:56
+msgid "Type their email address. It works for anyone, including people who haven't ordered yet."
+msgstr ""
+
+#: admin/views/page-customers.php:67
+msgid "Search Subscribers"
+msgstr ""
+
+#: admin/views/page-customers.php:98
+msgid "Mark a list of people as unsubscribed in one go, such as the unsubscribe list from the email tool you used before."
+msgstr ""
+
+#: admin/views/page-customers.php:99
+msgid "What the File Should Contain"
+msgstr ""
+
+#: admin/views/page-customers.php:101
+msgid "A CSV or TXT file with email addresses, one per row."
+msgstr ""
+
+#: admin/views/page-customers.php:102
+msgid "Other columns and a header row are fine: every cell with an email address counts, and the rest is ignored."
+msgstr ""
+
+#: admin/views/page-customers.php:103
+msgid "People who aren't in your store yet are added as unsubscribed, so they won't be emailed if they order later."
+msgstr ""
+
+#: admin/views/page-customers.php:105
+msgid "Everyone in the file stops getting marketing email. You can't undo this here: only they can opt back in."
+msgstr ""
+
+#: admin/views/page-customers.php:107
+msgid "File"
+msgstr ""
+
+#: admin/views/page-settings.php:18
+msgid "Settings Sections"
+msgstr ""
+
+#. translators: %s: number of emails
+#: admin/views/page-triggered-edit.php:49
+#, php-format
+msgid "%s sent"
+msgid_plural "%s sent"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/page-triggered-edit.php:57
+msgid "All Automatic Emails"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:58
+msgid "New Automatic Email"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:71
+msgid "Automatic Email Name"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:73
+msgid "Automatic email name"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:154
+msgid "days after it's sent (0 for never)"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:226
+msgid "On or Off"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:227
+msgid "On: sends by itself"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:228
+msgid "Off: nothing sends"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:229
+msgid "Emails already waiting stay waiting until you turn it back on."
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:233
+msgid "Type"
+msgstr ""
+
+#. translators: 1: number of people, 2: number of products
+#: admin/views/page-triggered-edit.php:249
+#, php-format
+msgid "Waiting now: %1$s requests for %2$s products."
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:250
+msgid "Nobody is waiting for a product yet."
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:257
+msgid "Guest Cart Capture is off, so this never sends."
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:258
+msgid "Turn It On in Settings"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:272
+msgid "Follows"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:274
+msgid "Choose an automatic email"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:281
+msgid "Only Send"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:294
+msgid "Hours or Days"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:306
+msgid "Always send, even to people who unsubscribed"
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:308
+msgid "Only for reminders about their own order, like an unpaid order. Sending marketing to people who unsubscribed can break anti-spam laws."
+msgstr ""
+
+#: admin/views/page-triggered-edit.php:326
+msgid "Filled in with sample details, without order details. The unsubscribe link is a sample."
+msgstr ""
+
+#: admin/views/page-triggered.php:24
+msgid "Add New Automatic Email"
+msgstr ""
+
+#: admin/views/page-triggered.php:38
+msgid "The over-mailing guard stopped these because the people were about to get too many emails:"
+msgstr ""
+
+#: admin/views/page-triggered.php:45
+msgid "They wait until you decide: send each one anyway, or cancel it."
+msgstr ""
+
+#: admin/views/page-triggered.php:53
+msgid "Upcoming and Sent"
+msgstr ""
+
+#. translators: %s: time zone, such as UTC+8 or Asia/Singapore
+#: admin/views/page-triggered.php:57
+#, php-format
+msgid "One row for each person an automatic email goes to. Times are store time (%s)."
+msgstr ""
+
+#: admin/views/page-triggered.php:68
+#: admin/views/settings-logs.php:74
+msgid "Search Emails"
+msgstr ""
+
+#: admin/views/page-triggered.php:79
+msgid "Sends one automatic email to one person, for example to resend a payment reminder. It goes out the next time sending runs, usually within a minute, and the over-mailing guard still checks it."
+msgstr ""
+
+#: admin/views/page-triggered.php:83
+msgid "Choose one"
+msgstr ""
+
+#. translators: %s: automatic email name
+#: admin/views/page-triggered.php:95
+#, php-format
+msgid "%s (Off)"
+msgstr ""
+
+#: admin/views/page-triggered.php:100
+msgid "This automatic email is off, so it waits until you turn it on."
+msgstr ""
+
+#: admin/views/page-triggered.php:103
+msgid "Order Number or Email Address"
+msgstr ""
+
+#: admin/views/page-triggered.php:105
+msgid "An order number fills in that order's details. With an email address, order details are left blank."
+msgstr ""
+
+#. translators: %s: number of log entries
+#: admin/views/settings-logs.php:50
+#, php-format
+msgid "Deleted %s old log entry."
+msgid_plural "Deleted %s old log entries."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/settings-logs.php:59
+msgid "The email log is off, so new emails aren't recorded."
+msgstr ""
+
+#: admin/views/settings-logs.php:60
+msgid "Turn It On"
+msgstr ""
+
+#: admin/views/settings-logs.php:83
+msgid "Old Logs"
+msgstr ""
+
+#. translators: 1: number of emails, 2: size such as "2 MB"
+#: admin/views/settings-logs.php:89
+#, php-format
+msgid "The log holds %1$s email and uses %2$s."
+msgid_plural "The log holds %1$s emails and uses %2$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of days
+#: admin/views/settings-logs.php:98
+#, php-format
+msgid "Entries older than %s day are deleted automatically once a day."
+msgid_plural "Entries older than %s days are deleted automatically once a day."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/settings-logs.php:101
+msgid "Entries are kept forever. Set Keep Logs For above to clear out old ones."
+msgstr ""
+
+#. translators: 1: number of log entries, 2: number of days
+#: admin/views/settings-logs.php:108
+#, php-format
+msgid "Delete %1$s log entry older than %2$s days? This can't be undone."
+msgid_plural "Delete %1$s log entries older than %2$s days? This can't be undone."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/settings-logs.php:114
+msgid "Delete Old Logs"
+msgstr ""
+
+#. translators: 1: number of log entries, 2: number of days
+#: admin/views/settings-logs.php:118
+#, php-format
+msgid "%1$s entry is older than %2$s days."
+msgid_plural "%1$s entries are older than %2$s days."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/settings-logs.php:126
+msgid "Email Details"
+msgstr ""
+
+#: admin/views/settings-logs.php:140
+#: includes/class-bhec-gdpr.php:331
+msgid "Email Content"
+msgstr ""
+
+#: admin/views/settings-logs.php:141
+msgid "Links and the open-tracking image are off here, so looking at this email doesn't count as the customer opening or clicking it."
+msgstr ""
+
+#: admin/views/settings-logs.php:146
+msgid "This email's content wasn't kept."
+msgstr ""
+
+#: admin/views/settings-logs.php:148
+msgid "The log keeps who, what and when, not the email itself. To keep the content too, set Email Log to Everything."
+msgstr ""
+
+#. translators: %s: email address
+#: admin/views/settings-status.php:33
+#, php-format
+msgid "Sent to %s. Check that inbox, and its spam folder."
+msgstr ""
+
+#: admin/views/settings-status.php:34
+msgid "WordPress couldn't send it. Check your mail plugin's settings and its log, then try again."
+msgstr ""
+
+#: admin/views/settings-status.php:35
+msgid "Delete every expired coupon this plugin made for customers? Coupons you made yourself aren't touched. This can't be undone."
+msgstr ""
+
+#: admin/views/settings-status.php:36
+msgid "Deleting..."
+msgstr ""
+
+#: admin/views/settings-status.php:37
+msgid "Restart background sending? Its schedule is cleared and set up again, and the next check runs within a minute."
+msgstr ""
+
+#: admin/views/settings-status.php:38
+msgid "Restarting..."
+msgstr ""
+
+#. translators: %s: date and time
+#: admin/views/settings-status.php:40
+#, php-format
+msgid "Restarted. Next check %s."
+msgstr ""
+
+#: admin/views/settings-status.php:41
+msgid "Import this file? Its segments and templates are added to this store."
+msgstr ""
+
+#: admin/views/settings-status.php:42
+msgid "Your current settings are replaced with the file's."
+msgstr ""
+
+#: admin/views/settings-status.php:43
+msgid "Settings you've already set here stay as they are."
+msgstr ""
+
+#: admin/views/settings-status.php:44
+msgid "Subscription choices in the file are applied too, except that nobody who unsubscribed here is subscribed again."
+msgstr ""
+
+#: admin/views/settings-status.php:75
+msgid "Not active"
+msgstr ""
+
+#: admin/views/settings-status.php:78
+msgid "Is Email Working?"
+msgstr ""
+
+#. translators: %s: number of problems
+#: admin/views/settings-status.php:84
+#, php-format
+msgid "%s thing needs attention."
+msgid_plural "%s things need attention."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/settings-status.php:86
+msgid "Everything looks fine."
+msgstr ""
+
+#: admin/views/settings-status.php:113
+msgid "Send a Test Email"
+msgstr ""
+
+#: admin/views/settings-status.php:114
+msgid "Sends a short plain email the same way campaigns go out, so you can check it arrives."
+msgstr ""
+
+#: admin/views/settings-status.php:119
+msgid "Send Test Email"
+msgstr ""
+
+#: admin/views/settings-status.php:124
+msgid "Environment"
+msgstr ""
+
+#: admin/views/settings-status.php:128
+msgid "Plugin Version"
+msgstr ""
+
+#. translators: 1: version number, 2: edition, Free or Pro
+#: admin/views/settings-status.php:132
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#. translators: 1: version number, 2: edition, Free or Pro
+#: admin/views/settings-status.php:132
+msgid "Free"
+msgstr ""
+
+#: admin/views/settings-status.php:137
+msgid "WordPress Version"
+msgstr ""
+
+#: admin/views/settings-status.php:141
+msgid "WooCommerce Version"
+msgstr ""
+
+#: admin/views/settings-status.php:145
+msgid "PHP Version"
+msgstr ""
+
+#: admin/views/settings-status.php:149
+msgid "Store Time Zone"
+msgstr ""
+
+#: admin/views/settings-status.php:155
+msgid "Campaigns and Subscribers"
+msgstr ""
+
+#: admin/views/settings-status.php:159
+msgid "Campaigns Sending"
+msgstr ""
+
+#: admin/views/settings-status.php:178
+msgid "Waiting to Confirm"
+msgstr ""
+
+#: admin/views/settings-status.php:185
+msgid "Sign-up is automatic, so customers who haven't chosen either way also get campaigns. They aren't counted above."
+msgstr ""
+
+#: admin/views/settings-status.php:188
+msgid "Database Tables"
+msgstr ""
+
+#: admin/views/settings-status.php:192
+msgid "Table"
+msgstr ""
+
+#: admin/views/settings-status.php:193
+msgid "Rows"
+msgstr ""
+
+#: admin/views/settings-status.php:194
+msgid "Size"
+msgstr ""
+
+#: admin/views/settings-status.php:199
+msgid "No tables found. Deactivate and activate the plugin to create them."
+msgstr ""
+
+#: admin/views/settings-status.php:217
+msgid "Row counts are the database's estimates."
+msgstr ""
+
+#: admin/views/settings-status.php:219
+msgid "Maintenance"
+msgstr ""
+
+#: admin/views/settings-status.php:225
+msgid "Expired Coupons"
+msgstr ""
+
+#: admin/views/settings-status.php:232
+msgid "Deletes the expired coupons this plugin made for customers, up to 200 at a time. Coupons you made yourself aren't touched."
+msgstr ""
+
+#. translators: %s: number of days
+#: admin/views/settings-status.php:237
+#, php-format
+msgid "They're also deleted automatically %s day after they expire."
+msgid_plural "They're also deleted automatically %s days after they expire."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/settings-status.php:249
+msgid "Restart Background Sending"
+msgstr ""
+
+#: admin/views/settings-status.php:252
+msgid "Sets up its once-a-minute schedule again. Use it if Background Sending above isn't running."
+msgstr ""
+
+#: admin/views/settings-status.php:259
+msgid "Move Settings to Another Store"
+msgstr ""
+
+#: admin/views/settings-status.php:260
+msgid "Download your settings, saved segments and templates as a file, then import it on the other store. Campaigns, reports and logs stay here. The CAPTCHA secret key and license key are left out for safety, so enter those again on the other store."
+msgstr ""
+
+#: admin/views/settings-status.php:263
+#: admin/views/settings-status.php:271
+msgid "Download Settings"
+msgstr ""
+
+#: admin/views/settings-status.php:269
+msgid "Include who's subscribed and unsubscribed"
+msgstr ""
+
+#: admin/views/settings-status.php:275
+#: admin/views/settings-status.php:289
+msgid "Import Settings"
+msgstr ""
+
+#: admin/views/settings-status.php:279
+msgid "Settings File"
+msgstr ""
+
+#: admin/views/settings-status.php:283
+msgid "Replace settings already set here"
+msgstr ""
+
+#: admin/views/settings-status.php:287
+msgid "Import who's subscribed and unsubscribed. Nobody who unsubscribed here is subscribed again."
+msgstr ""
+
+#: backhaus-email-campaigns.php:30
+msgid "Two copies of Email Campaigns are active. Keep one (Pro if you have it, and the newest version) and deactivate the other from the Plugins screen. Don't delete it from there: deleting a copy can remove your campaigns and subscribers."
+msgstr ""
+
+#: backhaus-email-campaigns.php:82
+msgid "The other copy of Email Campaigns has been deactivated. Your campaigns, subscribers and settings are shared and unchanged. Remove its folder by hand if you like, but don't delete it from the Plugins screen."
+msgstr ""
+
+#: backhaus-email-campaigns.php:104
+msgid "Email Campaigns needs WooCommerce to be installed and active."
+msgstr ""
+
+#: includes/class-bhec-campaign.php:302
+msgid "Campaign cannot be queued in its current status."
+msgstr ""
+
+#: includes/class-bhec-campaign.php:309
+msgid "No recipients match the selected filters."
+msgstr ""
+
+#. translators: 1: site name, 2: campaign title
+#: includes/class-bhec-cron.php:206
+#, php-format
+msgid "[%1$s] Campaign \"%2$s\" completed"
+msgstr ""
+
+#. translators: 1: campaign title, 2: sent count, 3: failed count, 4: campaign page URL, 5: held count
+#: includes/class-bhec-cron.php:212
+#, php-format
+msgid ""
+"Campaign \"%1$s\" has finished sending.\n"
+"\n"
+"Sent: %2$d\n"
+"Failed: %3$d\n"
+"Held by the over-mailing guard: %5$d (you can send them anyway from the campaign's page)\n"
+"\n"
+"See the campaign: %4$s"
+msgstr ""
+
+#: includes/class-bhec-csv-importer.php:25
+msgid "Please upload a CSV or TXT file."
+msgstr ""
+
+#: includes/class-bhec-csv-importer.php:30
+msgid "Could not read the uploaded file."
+msgstr ""
+
+#: includes/class-bhec-csv-importer.php:54
+msgid "No valid email addresses found in the file."
+msgstr ""
+
+#. translators: %s: store name
+#: includes/class-bhec-double-optin.php:39
+#, php-format
+msgid "Confirm your subscription to %s"
+msgstr ""
+
+#. translators: 1: store name, 2: confirmation URL
+#: includes/class-bhec-double-optin.php:45
+#, php-format
+msgid ""
+"Thank you for subscribing to marketing emails from %1$s. Please confirm your subscription by clicking the link below:\n"
+"\n"
+"%2$s\n"
+"\n"
+"If you did not request this, you can safely ignore this email."
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:64
+#: includes/class-bhec-double-optin.php:127
+msgid "Confirm Subscription"
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:92
+#: includes/class-bhec-unsubscribe.php:34
+msgid "Invalid Link"
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:93
+msgid "This confirmation link is invalid or has expired."
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:100
+msgid "Already Confirmed"
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:101
+msgid "Your subscription is already confirmed."
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:110
+msgid "Link No Longer Valid"
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:111
+msgid "You unsubscribed after this link was sent, so it no longer does anything. To get our emails again, turn them on in your account, or tick the box next time you check out."
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:120
+msgid "Confirm Your Subscription"
+msgstr ""
+
+#. translators: %s: email address
+#: includes/class-bhec-double-optin.php:123
+#, php-format
+msgid "Press the button to start receiving marketing emails at %s."
+msgstr ""
+
+#: includes/class-bhec-double-optin.php:146
+msgid "Subscription Confirmed"
+msgstr ""
+
+#. translators: %s: email address
+#: includes/class-bhec-double-optin.php:149
+#, php-format
+msgid "Thank you! %s has been confirmed for marketing emails."
+msgstr ""
+
+#: includes/class-bhec-email-templates.php:22
+msgid "WooCommerce Default"
+msgstr ""
+
+#: includes/class-bhec-email-templates.php:23
+msgid "Plain HTML (no WC styling)"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:28
+#: includes/class-bhec-gdpr.php:286
+msgid "Email Campaign Subscription"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:32
+#: includes/class-bhec-gdpr.php:335
+msgid "Email Campaign Logs"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:36
+#: includes/class-bhec-gdpr.php:113
+msgid "Campaigns Sent"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:40
+#: includes/class-bhec-gdpr.php:142
+msgid "Automatic Emails Sent"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:44
+#: includes/class-bhec-gdpr.php:193
+msgid "Email Opens, Clicks and Orders"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:48
+#: includes/class-bhec-gdpr.php:247
+msgid "Saved Carts"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:52
+#: includes/class-bhec-gdpr.php:218
+msgid "Back-in-Stock Requests"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:119
+#: includes/class-bhec-gdpr.php:149
+#: includes/class-bhec-gdpr.php:321
+msgid "Sent At"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:148
+msgid "Due"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:166
+msgid "Opened an email"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:167
+msgid "Clicked a link"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:168
+msgid "Placed an order after clicking"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:176
+msgid "What"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:178
+msgid "When (UTC)"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:186
+msgid "IP Address"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:189
+msgid "Browser"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:223
+msgid "Asked (UTC)"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:224
+msgid "Emailed (UTC)"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:251
+msgid "Saved (UTC)"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:252
+msgid "Updated (UTC)"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:267
+msgid "Email Campaign Data"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:327
+#: includes/class-bhec-unsubscribe.php:63
+msgid "Error"
+msgstr ""
+
+#: includes/class-bhec-gdpr.php:399
+msgid "Email Campaigns kept this email address on its do-not-email list, with no other details, so the person is never sent marketing email again."
+msgstr ""
+
+#: includes/class-bhec-license.php:98
+msgid "Too many requests. Please try again later."
+msgstr ""
+
+#: includes/class-bhec-license.php:104
+msgid "The license server could not be reached. Please try again later."
+msgstr ""
+
+#: includes/class-bhec-loader.php:265
+msgid "Please enter a segment name."
+msgstr ""
+
+#: includes/class-bhec-loader.php:297
+msgid "Template not found."
+msgstr ""
+
+#. translators: %s: time sending resumes
+#: includes/class-bhec-loader.php:330
+#, php-format
+msgid "Paused until %s because your mail provider asked us to slow down."
+msgstr ""
+
+#: includes/class-bhec-loader.php:352
+msgid "Another run is still sending. Trying again."
+msgstr ""
+
+#. translators: %s: elapsed seconds
+#: includes/class-bhec-loader.php:359
+#, php-format
+msgid "Queue processed in %ss."
+msgstr ""
+
+#: includes/class-bhec-loader.php:379
+msgid "License activated for this site."
+msgstr ""
+
+#: includes/class-bhec-loader.php:381
+msgid "Invalid license key."
+msgstr ""
+
+#. translators: %d: number of coupons deleted
+#: includes/class-bhec-loader.php:482
+#, php-format
+msgid "%d expired coupons deleted."
+msgstr ""
+
+#. translators: %s: store name
+#: includes/class-bhec-loader.php:504
+#, php-format
+msgid "Test email from %s"
+msgstr ""
+
+#: includes/class-bhec-loader.php:505
+msgid "Email Campaigns sent this to check that your store can send email. If you are reading it, it can."
+msgstr ""
+
+#: includes/class-bhec-loader.php:511
+msgid "WordPress couldn't send it. Check the plugin that sends your store's email (such as WP Mail SMTP)."
+msgstr ""
+
+#: includes/class-bhec-loader.php:532
+msgid "Could not schedule the cron event."
+msgstr ""
+
+#: includes/class-bhec-loader.php:548
+#: includes/class-bhec-loader.php:646
+#: includes/class-bhec-loader.php:674
+msgid "Invalid nonce."
+msgstr ""
+
+#: includes/class-bhec-loader.php:689
+msgid "No file was uploaded."
+msgstr ""
+
+#: includes/class-bhec-loader.php:706
+msgid "File upload failed."
+msgstr ""
+
+#: includes/class-bhec-loader.php:717
+msgid "Invalid file type. Please upload a .json file."
+msgstr ""
+
+#: includes/class-bhec-loader.php:730
+msgid "Invalid JSON file. Could not decode the file contents."
+msgstr ""
+
+#: includes/class-bhec-loader.php:740
+msgid "Invalid export file. Missing plugin version information."
+msgstr ""
+
+#. translators: 1: settings count, 2: segments count, 3: templates count, 4: subscriptions count
+#: includes/class-bhec-loader.php:753
+#, php-format
+msgid "Import complete. Settings: %1$d, Segments: %2$d, Templates: %3$d, Subscriptions: %4$d."
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:19
+msgid "Customer email"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:20
+msgid "First name"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:21
+msgid "Last name"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:22
+msgid "Full name"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:27
+msgid "Total orders"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:28
+msgid "Total spent"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:29
+msgid "Last order date"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:30
+msgid "Store name"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:31
+msgid "Store URL"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:32
+msgid "Unsubscribe link"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:33
+msgid "Unique coupon code"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:34
+msgid "Order items as product cards (images + prices)"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:35
+msgid "Order items as table (product, qty, price)"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:36
+msgid "Product card (use product ID, e.g. {{ product:42 }} or {{ product:42,55,78 }})"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:211
+msgid "Qty"
+msgstr ""
+
+#: includes/class-bhec-merge-tags.php:212
+msgid "Price"
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:58
+msgid "Thanks. We'll email you when it's back."
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:59
+msgid "Sold out for now. Want an email when it's back?"
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:61
+msgid "Email address"
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:62
+#: includes/class-bhec-signup-form.php:31
+msgid "Your email address"
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:63
+msgid "Email Me When It's Back"
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:111
+msgid "Please reload the page and try again."
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:116
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:119
+msgid "This product can be ordered now."
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:122
+msgid "Please try again."
+msgstr ""
+
+#: includes/class-bhec-product-alerts.php:219
+msgid "The product sold out again before this sent; they're waiting for the next restock."
+msgstr ""
+
+#: includes/class-bhec-queue.php:316
+msgid "The sending run stopped before this email finished."
+msgstr ""
+
+#: includes/class-bhec-send-control.php:59
+msgid "The mail setup reported a failure without a reason."
+msgstr ""
+
+#. translators: 1: number of emails, 2: last error message
+#: includes/class-bhec-send-control.php:115
+#, php-format
+msgid "%1$d emails in a row failed. Last error: %2$s"
+msgstr ""
+
+#. translators: %s: site name
+#: includes/class-bhec-send-control.php:328
+#, php-format
+msgid "[%s] Automatic emails paused"
+msgstr ""
+
+#. translators: 1: reason, 2: admin URL
+#: includes/class-bhec-send-control.php:333
+#, php-format
+msgid ""
+"Email Campaigns paused automatic emails to protect your customers.\n"
+"\n"
+"%1$s\n"
+"\n"
+"This usually means a rule fires more often than intended, for example on every order. Nobody is emailed while it's paused. Check your rules, then resume sending here:\n"
+"%2$s"
+msgstr ""
+
+#: includes/class-bhec-send-guard.php:27
+msgid "Got another campaign recently"
+msgstr ""
+
+#: includes/class-bhec-send-guard.php:28
+msgid "Daily email limit reached"
+msgstr ""
+
+#: includes/class-bhec-send-guard.php:29
+msgid "Got this automatic email recently"
+msgstr ""
+
+#. translators: 1: number of emails, 2: minutes
+#: includes/class-bhec-send-guard.php:153
+#, php-format
+msgid "%1$d automatic emails were held in %2$d minutes because the same people were about to be emailed again."
+msgstr ""
+
+#. translators: %s: unsubscribe URL
+#: includes/class-bhec-sender.php:238
+#, php-format
+msgid "Don't want to receive these emails? <a href=\"%s\" style=\"color: #999;\">Unsubscribe</a>"
+msgstr ""
+
+#. translators: %s: plugin name, linked
+#: includes/class-bhec-sender.php:257
+#, php-format
+msgid "Sent with %s"
+msgstr ""
+
+#: includes/class-bhec-signup-form.php:29
+msgid "Subscribe to our newsletter"
+msgstr ""
+
+#: includes/class-bhec-signup-form.php:32
+msgid "Thank you for subscribing!"
+msgstr ""
+
+#: includes/class-bhec-signup-form.php:84
+msgid "An error occurred."
+msgstr ""
+
+#: includes/class-bhec-signup-form.php:142
+msgid "Invalid request."
+msgstr ""
+
+#: includes/class-bhec-signup-form.php:157
+msgid "Verification failed. Please try again."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:22
+msgid "Abandoned Cart (Guest Capture, no order)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:23
+msgid "Abandoned Order (Pending/Failed Payment)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:24
+msgid "Remarketing (Order Completed)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:25
+msgid "Welcome Email (New Customer)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:26
+msgid "Review Request (After Delivery)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:27
+msgid "Win-Back (Lapsed Customer)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:28
+msgid "Cross-Sell (Post-Purchase)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:29
+msgid "Follow-Up (After Another Automatic Email)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:30
+msgid "Back in Stock (Customer Asked)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:31
+msgid "New Arrivals (Categories They Bought From)"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:43
+msgid "Always"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:44
+msgid "If they haven't ordered since"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:45
+msgid "If they didn't open it"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:46
+msgid "If they opened it"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:47
+msgid "If they didn't click a link"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:48
+msgid "If they clicked a link"
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:507
+msgid "The email it follows is gone."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:522
+msgid "They ordered after the last email."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:538
+msgid "They didn't open the last email."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:539
+msgid "They opened the last email."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:540
+msgid "They didn't click the last email."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:541
+msgid "They clicked the last email."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:598
+msgid "Auto-trashed: customer completed a new order."
+msgstr ""
+
+#. translators: %d: number of days
+#: includes/class-bhec-triggered-emails.php:687
+#, php-format
+msgid "Auto-trashed: %d days after abandoned order email with no payment."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:714
+msgid "The sending run stopped before this email finished, so it may have gone out. It isn't sent again."
+msgstr ""
+
+#: includes/class-bhec-triggered-emails.php:854
+msgid "Nothing new in the categories they bought from."
+msgstr ""
+
+#: includes/class-bhec-unsubscribe.php:35
+msgid "This unsubscribe link is invalid or has expired."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/class-bhec-unsubscribe.php:57
+#, php-format
+msgid "You have been successfully unsubscribed. %s will no longer receive marketing emails from us."
+msgstr ""
+
+#: includes/class-bhec-unsubscribe.php:64
+msgid "Something went wrong. Please try again or contact us."
+msgstr ""
+
+#: includes/class-bhec-unsubscribe.php:73
+msgid "Already Unsubscribed"
+msgstr ""
+
+#. translators: %s: email address
+#: includes/class-bhec-unsubscribe.php:76
+#, php-format
+msgid "%s is already unsubscribed from marketing emails."
+msgstr ""
+
+#. translators: %s: email address
+#: includes/class-bhec-unsubscribe.php:85
+#, php-format
+msgid "Are you sure you want to unsubscribe %s from marketing emails?"
+msgstr ""
+
+#: includes/class-bhec-unsubscribe.php:90
+msgid "Confirm Unsubscribe"
+msgstr ""
+
+#: includes/class-bhec-updater.php:140
+msgid "Updating needs an active license on this site."
+msgstr ""
+
+#: includes/class-bhec-updater.php:142
+msgid "Check your license"
+msgstr ""
+
+#: woocommerce/class-bhec-blocks-checkout-integration.php:70
+#: woocommerce/class-bhec-checkout-optin.php:28
+msgid "Subscribe to our marketing emails"
+msgstr ""
+
+#: woocommerce/class-bhec-blocks-integration.php:52
+msgid "Marketing email opt-in"
+msgstr ""
+
+#: woocommerce/class-bhec-myaccount.php:39
+#: woocommerce/class-bhec-myaccount.php:111
+msgid "Email Preferences"
+msgstr ""
+
+#: woocommerce/class-bhec-myaccount.php:98
+msgid "Your email preferences have been updated."
+msgstr ""
+
+#: woocommerce/class-bhec-myaccount.php:112
+msgid "Manage your marketing email subscription below. This does not affect transactional emails (order confirmations, shipping updates, etc.)."
+msgstr ""
+
+#: woocommerce/class-bhec-myaccount.php:120
+msgid "I would like to receive marketing emails, promotions, and updates."
+msgstr ""
+
+#. translators: %s: date
+#: woocommerce/class-bhec-myaccount.php:129
+#, php-format
+msgid "You unsubscribed on %s."
+msgstr ""
+
+#: woocommerce/class-bhec-myaccount.php:138
+msgid "Save Preferences"
+msgstr ""

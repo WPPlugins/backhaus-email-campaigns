@@ -1,0 +1,165 @@
+/**
+ * Campaigns list, editor and campaign page. Shared pieces are in bhec-ui.css.
+ */
+
+/* ----- Campaigns list --------------------------------------------------- */
+
+.wp-list-table.campaigns .column-status { width: 190px; }
+.wp-list-table.campaigns .column-recipients,
+.wp-list-table.campaigns .column-opened,
+.wp-list-table.campaigns .column-clicked { width: 110px; }
+
+.wp-list-table.campaigns .row-title { font-size: 14px; }
+
+
+/* ----- Send box --------------------------------------------------------- */
+
+.bhec-reach {
+	margin: 4px 0 14px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid var(--bhec-line);
+	transition: opacity 0.15s ease;
+}
+
+.bhec-reach-number {
+	display: block;
+	min-height: 38px;
+	color: var(--bhec-text);
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 38px;
+	font-variant-numeric: tabular-nums;
+}
+
+.bhec-reach-label { color: var(--bhec-muted); }
+
+.bhec-reach.is-loading { opacity: 0.55; }
+
+.bhec-reach.is-empty .bhec-reach-number { color: var(--bhec-bad); }
+
+.bhec-when { margin: 0 0 14px; }
+
+.bhec-when > label {
+	display: block;
+	margin: 0 0 6px;
+}
+
+.bhec-schedule { margin: 8px 0 0 24px; }
+
+.bhec-schedule input { width: 100%; max-width: 220px; }
+
+/* ----- Who Gets This ---------------------------------------------------- */
+
+.bhec-audience .inside > .bhec-hint:first-child { margin: 4px 0 16px; }
+
+.bhec-audience .bhec-field { margin: 0 0 14px; }
+
+.bhec-audience .bhec-details { margin: 0 0 14px; }
+
+.bhec-status-checks {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 4px 8px;
+}
+
+.bhec-audience-footer {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 12px;
+	border-top: 1px solid var(--bhec-line);
+}
+
+.bhec-sample { margin-top: 10px; }
+
+.bhec-sample ul {
+	max-height: 220px;
+	margin: 0;
+	overflow: auto;
+	font-size: 13px;
+}
+
+.bhec-sample li {
+	margin: 0;
+	padding: 4px 0;
+	border-bottom: 1px solid var(--bhec-line);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#bhec-save-segment-form { margin-top: 10px; }
+
+#bhec-save-segment-form input { flex: 1; min-width: 0; }
+
+/* ----- Campaign page ---------------------------------------------------- */
+
+.bhec-view-status {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	margin: 4px 0 16px;
+}
+
+.bhec-view-when .bhec-muted { margin-left: 4px; }
+
+.bhec-live .inside { padding: 16px; margin: 0; }
+
+.bhec-live-numbers { font-size: 15px; }
+
+.bhec-live-numbers strong { font-size: 22px; }
+
+.bhec-live .bhec-progress {
+	max-width: none;
+	height: 10px;
+	border-radius: 5px;
+	margin: 10px 0 6px;
+}
+
+.bhec-live-actions {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-top: 12px;
+}
+
+.bhec-view-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	gap: 16px;
+	align-items: start;
+}
+
+.bhec-view-grid .postbox { margin: 0; }
+
+.bhec-view-subject {
+	margin: 0 0 12px;
+	font-size: 14px;
+}
+
+.bhec-view-subject .bhec-muted { margin-right: 6px; }
+
+.bhec-preview-inline {
+	height: 560px;
+	border: 1px solid var(--bhec-track);
+}
+
+.bhec-audience-lines {
+	margin: 0 0 12px;
+	padding-left: 18px;
+	list-style: disc;
+}
+
+.bhec-audience-lines li { margin-bottom: 6px; }
+
+/* ----- Narrow screens --------------------------------------------------- */
+
+@media screen and (max-width: 960px) {
+	.bhec-view-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media screen and (max-width: 782px) {
+	.bhec-status-checks { grid-template-columns: minmax(0, 1fr); }
+
+	.bhec-preview-inline { height: 440px; }
+}

@@ -1,0 +1,155 @@
+/**
+ * Subscribers list, email history and the opt-out import. Shared pieces are
+ * in bhec-ui.css.
+ */
+
+.bhec-mode-hint { margin: 4px 0 8px; }
+
+/* Line the second page-title action up with the first (see bhec-ui.css). */
+.bhec-subscribers .page-title-action + .page-title-action { vertical-align: 2px; }
+
+/* ----- Unsubscribe Someone ---------------------------------------------- */
+
+.bhec-quick-unsub { margin: 12px 0 20px; }
+
+.bhec-quick-unsub .bhec-inline input {
+	width: 25em;
+	max-width: 100%;
+}
+
+.bhec-quick-unsub .bhec-import-error { margin: 6px 0 0; }
+
+/* ----- List ------------------------------------------------------------- */
+
+.wp-list-table.subscribers .column-status { width: 22%; }
+.wp-list-table.subscribers .column-source { width: 11%; }
+.wp-list-table.subscribers .column-orders { width: 8%; }
+.wp-list-table.subscribers .column-spent { width: 11%; }
+.wp-list-table.subscribers .column-last_email { width: 13%; }
+
+.wp-list-table.subscribers .row-title {
+	font-size: 14px;
+	text-align: left;
+	overflow-wrap: anywhere;
+}
+
+.wp-list-table.subscribers .row-title:hover { color: var(--bhec-accent); }
+
+/* ----- Dialogs ---------------------------------------------------------- */
+
+dialog.bhec-history-dialog { width: min(760px, calc(100vw - 32px)); }
+
+.bhec-history-head {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.bhec-history-head > div:first-child {
+	flex: 1;
+	min-width: 0;
+}
+
+.bhec-history-head h2 {
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+.bhec-history-name {
+	margin: 4px 0 0;
+	color: var(--bhec-muted);
+}
+
+.bhec-history-body { min-height: 120px; margin-top: 16px; }
+
+.bhec-history-status {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+}
+
+.bhec-history-meta { margin: 8px 0 16px; }
+
+.bhec-history-meta .bhec-muted { margin-right: 4px; }
+
+.bhec-history-meta a { margin-left: 12px; }
+
+.bhec-history-loading {
+	display: flex;
+	align-items: center;
+	color: var(--bhec-muted);
+}
+
+.bhec-history-loading .spinner { float: none; margin: 0 8px 0 0; }
+
+.bhec-history-empty {
+	padding: 24px 0;
+	color: var(--bhec-muted);
+	text-align: center;
+}
+
+.bhec-history-table { margin-top: 8px; }
+
+.bhec-history-table .bhec-history-mark {
+	width: 72px;
+	text-align: center;
+}
+
+.bhec-history-table .dashicons-yes { color: var(--bhec-good); }
+
+/* ----- Import ----------------------------------------------------------- */
+
+.bhec-import-rules {
+	margin: 0 0 12px;
+	padding-left: 18px;
+	list-style: disc;
+}
+
+.bhec-import-rules li { margin-bottom: 4px; }
+
+#bhec-import-file { max-width: 100%; }
+
+.bhec-import-error { color: var(--bhec-bad); }
+
+#bhec-import-result .notice { margin: 0; }
+
+#bhec-import-dialog .bhec-dialog-actions { align-items: center; }
+
+#bhec-import-dialog .spinner { float: none; margin: 0; }
+
+/* ----- Narrow screens --------------------------------------------------- */
+
+@media screen and (max-width: 782px) {
+	.bhec-history-table thead { display: none; }
+
+	.bhec-history-table tr {
+		display: block;
+		padding: 8px 0;
+		border-bottom: 1px solid var(--bhec-line);
+	}
+
+	.bhec-history-table td {
+		display: flex;
+		justify-content: space-between;
+		gap: 12px;
+		padding: 4px 10px;
+		text-align: right;
+	}
+
+	.bhec-history-table td:first-child {
+		display: block;
+		text-align: left;
+	}
+
+	.bhec-history-table td + td::before {
+		content: attr(data-label);
+		color: var(--bhec-muted);
+		text-align: left;
+	}
+
+	.bhec-history-table .bhec-history-mark {
+		width: auto;
+		text-align: right;
+	}
+}

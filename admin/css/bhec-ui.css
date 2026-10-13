@@ -1,0 +1,880 @@
+/**
+ * Shared building blocks for the plugin's admin screens. Builds on WordPress
+ * admin styles; colors are the admin's own. Screen-specific styles live in
+ * their own files (bhec-campaigns.css and so on).
+ *
+ * Wrap each screen in <div class="wrap bhec-wrap">.
+ */
+
+.bhec-wrap,
+.bhec-popover {
+	--bhec-accent: var(--wp-admin-theme-color, #2271b1);
+	--bhec-text: #1d2327;
+	--bhec-muted: #646970;
+	--bhec-border: #c3c4c7;
+	--bhec-line: #f0f0f1;
+	--bhec-soft: #f6f7f7;
+	--bhec-good: #00a32a;
+	--bhec-warn: #996800;
+	--bhec-bad: #d63638;
+	--bhec-danger: #b32d2e;
+	--bhec-danger-hover: #8a2424;
+	--bhec-surface: #fff;
+	--bhec-input: #fff;
+	--bhec-hover: #f0f6fc;
+	--bhec-track: #dcdcde;
+	--bhec-frame: #e8e8e8;
+	--bhec-note-bg: #fcf9e8;
+	--bhec-note-edge: #dba617;
+	--bhec-accent-soft: color-mix(in srgb, var(--bhec-accent) 12%, #fff);
+	--bhec-shadow: rgba(0, 0, 0, 0.12);
+}
+
+/* Dark mode, as the Dark Mode for WP Dashboard plugin draws it (it puts
+   dark-mode on body and its colors in --dm-* properties). Everything on these
+   screens takes its colors from the properties above, so this is the palette. */
+body.dark-mode .bhec-wrap,
+body.dark-mode .bhec-popover {
+	--bhec-accent: var(--dm-accent, #6b9cff);
+	--bhec-text: var(--dm-text-primary, #eceff4);
+	--bhec-muted: var(--dm-text-secondary, #a0aab6);
+	--bhec-border: var(--dm-border-strong, #4c566a);
+	--bhec-line: var(--dm-border, #3b4252);
+	--bhec-soft: var(--dm-bg-base, #1a1e26);
+	--bhec-good: var(--dm-success, #4ade80);
+	--bhec-warn: var(--dm-warning, #fbbf24);
+	--bhec-bad: var(--dm-error, #f87171);
+	--bhec-danger: var(--dm-error, #f87171);
+	--bhec-danger-hover: #fca5a5;
+	--bhec-surface: var(--dm-bg-elevated, #252a34);
+	--bhec-input: var(--dm-bg-input, #1e232c);
+	--bhec-hover: var(--dm-bg-hover, #3d4555);
+	--bhec-track: var(--dm-border-strong, #4c566a);
+	--bhec-frame: var(--dm-bg-base, #1a1e26);
+	--bhec-note-bg: rgba(251, 191, 36, 0.1);
+	--bhec-note-edge: var(--dm-warning, #fbbf24);
+	--bhec-accent-soft: color-mix(in srgb, var(--bhec-accent) 20%, transparent);
+	--bhec-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* That plugin sets the text color of every paragraph, label and table cell,
+   of every span in a postbox, and of header buttons, with selectors stronger
+   than ours. Where our color carries meaning (badges; muted, warning and
+   error text), it is set again here. */
+body.wp-admin.dark-mode .bhec-wrap .bhec-badge { color: var(--bhec-badge-fg); }
+
+body.wp-admin.dark-mode .bhec-wrap .bhec-muted,
+body.wp-admin.dark-mode .bhec-wrap .bhec-hint,
+body.wp-admin.dark-mode .bhec-wrap .bhec-status-detail,
+body.wp-admin.dark-mode .bhec-wrap .bhec-row-subject,
+body.wp-admin.dark-mode .bhec-wrap .bhec-stat-label,
+body.wp-admin.dark-mode .bhec-wrap .bhec-stat-sub,
+body.wp-admin.dark-mode .bhec-wrap .bhec-section-summary,
+body.wp-admin.dark-mode .bhec-wrap .bhec-save-state,
+body.wp-admin.dark-mode .bhec-wrap .bhec-range label,
+body.wp-admin.dark-mode .bhec-wrap .bhec-dates label,
+body.wp-admin.dark-mode .bhec-wrap .bhec-reach-label,
+body.wp-admin.dark-mode .bhec-wrap .bhec-report-quiet,
+body.wp-admin.dark-mode .bhec-wrap .bhec-kind-notes,
+body.wp-admin.dark-mode .bhec-wrap .bhec-history-name,
+body.wp-admin.dark-mode .bhec-wrap .bhec-history-empty,
+body.wp-admin.dark-mode .bhec-wrap .bhec-tool-status,
+body.wp-admin.dark-mode .bhec-wrap .bhec-preview-subject { color: var(--bhec-muted); }
+
+body.wp-admin.dark-mode .bhec-wrap .bhec-warn-text,
+body.wp-admin.dark-mode .bhec-wrap .bhec-section-summary.is-warning { color: var(--bhec-warn); }
+
+body.wp-admin.dark-mode .bhec-wrap .bhec-import-error,
+body.wp-admin.dark-mode .bhec-wrap .bhec-tool-status.is-error { color: var(--bhec-bad); }
+
+body.wp-admin.dark-mode .bhec-wrap button.page-title-action { color: var(--dm-text-on-accent, #fff); }
+
+.bhec-wrap [hidden],
+.bhec-popover[hidden],
+.bhec-popover [hidden] { display: none !important; }
+
+/* Some plugins style every .description on every admin page (Slider
+   Revolution's builder.css makes them inline-block), which pulls a field's
+   help text up beside its input. Ours always sit under the field. */
+.bhec-wrap p.description { display: block; }
+
+.bhec-muted { color: var(--bhec-muted); }
+
+.bhec-hint {
+	margin: 6px 0 0;
+	color: var(--bhec-muted);
+	font-size: 13px;
+}
+
+/* "< All Campaigns" above a sub-page title. */
+.bhec-back {
+	display: flex;
+	width: fit-content;
+	align-items: center;
+	margin: 12px 0 2px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.bhec-back .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	margin-left: -3px;
+}
+
+.bhec-wrap .wp-heading-inline + .page-title-action,
+.bhec-wrap .page-title-action + .page-title-action { vertical-align: 2px; }
+
+.bhec-danger.button-link { color: var(--bhec-danger); }
+.bhec-danger.button-link:hover { color: var(--bhec-danger-hover); }
+
+.bhec-section-heading {
+	margin: 28px 0 8px;
+	font-size: 1.3em;
+}
+
+/* Postboxes outside #poststuff need their header spacing back. */
+.bhec-wrap .postbox-header .hndle {
+	margin: 0;
+	padding: 10px 12px;
+	font-size: 14px;
+}
+
+/* ----- Status badges ---------------------------------------------------- */
+
+.bhec-badge {
+	display: inline-block;
+	padding: 1px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 500;
+	background: var(--bhec-badge-bg);
+	color: var(--bhec-badge-fg);
+	white-space: nowrap;
+}
+
+/* Neutral, for "nothing" states. */
+.bhec-badge,
+.bhec-badge-none { --bhec-badge-bg: #f0f0f1; --bhec-badge-fg: #50575e; }
+
+.bhec-badge-info,
+.bhec-badge-scheduled { --bhec-badge-bg: #e5f1fa; --bhec-badge-fg: #135e96; }
+
+.bhec-badge-good,
+.bhec-badge-sending,
+.bhec-badge-sent { --bhec-badge-bg: #edfaef; --bhec-badge-fg: #006a1b; }
+
+.bhec-badge-warn,
+.bhec-badge-paused { --bhec-badge-bg: #fcf9e8; --bhec-badge-fg: #996800; }
+
+.bhec-badge-bad,
+.bhec-badge-failed { --bhec-badge-bg: #fcf0f1; --bhec-badge-fg: #b32d2e; }
+
+body.dark-mode .bhec-badge,
+body.dark-mode .bhec-badge-none { --bhec-badge-bg: rgba(255, 255, 255, 0.08); --bhec-badge-fg: var(--dm-text-secondary, #a0aab6); }
+
+body.dark-mode .bhec-badge-info,
+body.dark-mode .bhec-badge-scheduled { --bhec-badge-bg: rgba(96, 165, 250, 0.16); --bhec-badge-fg: #93c5fd; }
+
+body.dark-mode .bhec-badge-good,
+body.dark-mode .bhec-badge-sending,
+body.dark-mode .bhec-badge-sent { --bhec-badge-bg: rgba(74, 222, 128, 0.14); --bhec-badge-fg: var(--dm-success, #4ade80); }
+
+body.dark-mode .bhec-badge-warn,
+body.dark-mode .bhec-badge-paused { --bhec-badge-bg: rgba(251, 191, 36, 0.14); --bhec-badge-fg: var(--dm-warning, #fbbf24); }
+
+body.dark-mode .bhec-badge-bad,
+body.dark-mode .bhec-badge-failed { --bhec-badge-bg: rgba(248, 113, 113, 0.16); --bhec-badge-fg: var(--dm-error, #f87171); }
+
+/* A live dot for anything in progress. */
+.bhec-badge-live::before,
+.bhec-badge-sending::before {
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 6px 1px 0;
+	border-radius: 50%;
+	background: var(--bhec-good);
+	animation: bhec-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes bhec-pulse {
+	50% { opacity: 0.25; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.bhec-badge-live::before,
+	.bhec-badge-sending::before { animation: none; }
+}
+
+/* Muted second line in a table cell. */
+.bhec-status-detail,
+.bhec-row-subject {
+	display: block;
+	margin-top: 3px;
+	color: var(--bhec-muted);
+	font-size: 13px;
+}
+
+a.bhec-held-link,
+.bhec-warn-text { color: var(--bhec-warn); }
+
+.bhec-progress {
+	display: block;
+	width: 100%;
+	max-width: 180px;
+	height: 6px;
+	margin-top: 8px;
+	border-radius: 3px;
+	background: var(--bhec-track);
+	overflow: hidden;
+}
+
+.bhec-progress > span {
+	display: block;
+	height: 100%;
+	background: var(--bhec-good);
+	transition: width 0.4s ease;
+}
+
+/* A status badge under the row title, for phones, where WordPress hides
+   every column but the first. */
+.bhec-mobile-status { display: none; }
+
+/* Empty state inside a list table. */
+.bhec-empty {
+	max-width: 420px;
+	margin: 32px auto;
+	text-align: center;
+	color: var(--bhec-muted);
+}
+
+.bhec-empty-title {
+	margin: 0 0 4px;
+	color: var(--bhec-text);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* The first campaign: steps, then layouts to start from. */
+.bhec-empty.bhec-first { max-width: 720px; }
+
+.bhec-first-steps {
+	display: inline-block;
+	margin: 8px 0 16px 1.5em;
+	text-align: left;
+}
+
+.bhec-starters {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 12px;
+	text-align: left;
+}
+
+.bhec-starter {
+	display: block;
+	padding: 12px 14px;
+	border: 1px solid var(--bhec-border);
+	border-radius: 6px;
+	background: var(--bhec-surface);
+	color: var(--bhec-text);
+	text-decoration: none;
+}
+
+.bhec-starter:hover,
+.bhec-starter:focus {
+	border-color: var(--bhec-accent);
+	background: var(--bhec-hover);
+	color: var(--bhec-text);
+}
+
+.bhec-starter-name {
+	display: block;
+	font-weight: 600;
+}
+
+.bhec-starter-about {
+	display: block;
+	margin-top: 2px;
+	color: var(--bhec-muted);
+}
+
+.bhec-starter-line { margin: 8px 0 0; color: var(--bhec-muted); }
+.bhec-starter-line a[aria-current] { font-weight: 600; color: var(--bhec-text); text-decoration: none; }
+
+/* ----- Fields ----------------------------------------------------------- */
+
+.bhec-field + .bhec-field,
+.bhec-field + .bhec-details,
+.bhec-details + .bhec-field,
+.bhec-grid + .bhec-details { margin-top: 16px; }
+
+.bhec-label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 600;
+	color: var(--bhec-text);
+}
+
+.bhec-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px 24px;
+}
+
+.bhec-grid .bhec-field + .bhec-field { margin-top: 0; }
+
+.bhec-grid .regular-text { width: 100%; }
+
+.bhec-inline {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+}
+
+.bhec-checks { align-self: end; }
+
+.bhec-checks label {
+	display: block;
+	margin: 4px 0;
+}
+
+.bhec-toggle-row {
+	display: flex;
+	gap: 6px;
+	align-items: flex-start;
+	margin: 0 0 14px;
+}
+
+.bhec-toggle-row input { margin-top: 2px; }
+
+/* "At least [ ] at most [ ]" */
+.bhec-range {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+}
+
+.bhec-range input[type="number"] { width: 72px; }
+
+.bhec-range label,
+.bhec-dates label { color: var(--bhec-muted); }
+
+/* "From [date]" / "To [date]" */
+.bhec-dates {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	align-items: center;
+	gap: 6px 10px;
+}
+
+.bhec-dates input { width: 100%; }
+
+/* Show-more toggle: <details class="bhec-details"><summary>...</summary>... */
+.bhec-details > summary {
+	display: inline-block;
+	color: var(--bhec-accent);
+	cursor: pointer;
+}
+
+.bhec-details > summary::-webkit-details-marker { display: none; }
+
+.bhec-details > summary::before {
+	content: "\f345";
+	display: inline-block;
+	margin-right: 2px;
+	font: normal 16px/1 dashicons;
+	vertical-align: -3px;
+	transition: transform 0.15s ease;
+}
+
+.bhec-details[open] > summary::before { transform: rotate(90deg); }
+
+.bhec-details[open] > summary { margin-bottom: 12px; }
+
+/* A field's label with quiet tools on the right. */
+.bhec-label-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 4px 16px;
+	margin-bottom: 6px;
+}
+
+.bhec-label-row .bhec-label { margin: 0 0 4px; }
+
+.bhec-tools {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2px;
+	margin-right: -6px;
+}
+
+.bhec-tool {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	height: 28px;
+	padding: 0 8px 0 6px;
+	border: 0;
+	border-radius: 3px;
+	background: none;
+	color: var(--bhec-accent);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.bhec-tool:hover,
+.bhec-tool[aria-expanded="true"] { background: var(--bhec-hover); }
+
+.bhec-tool:focus-visible {
+	outline: 2px solid var(--bhec-accent);
+	outline-offset: 0;
+}
+
+.bhec-tool .dashicons {
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.bhec-tool .bhec-tool-caret {
+	width: 12px;
+	height: 12px;
+	margin-left: -1px;
+	font-size: 12px;
+}
+
+/* ----- Collapsible sections (postbox with a summary line) -------------- */
+
+.bhec-section { margin-bottom: 16px; }
+
+.bhec-section-toggle {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	padding: 12px 16px;
+	border: 0;
+	background: none;
+	text-align: left;
+	cursor: pointer;
+	color: var(--bhec-text);
+	font-size: 14px;
+}
+
+.bhec-section-toggle:focus-visible {
+	outline: 2px solid var(--bhec-accent);
+	outline-offset: -2px;
+}
+
+.bhec-section-title { font-weight: 600; }
+
+.bhec-section-summary {
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	color: var(--bhec-muted);
+	font-size: 13px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.bhec-section-summary.is-warning { color: var(--bhec-warn); }
+
+.bhec-section-toggle .dashicons {
+	color: var(--bhec-muted);
+	transition: transform 0.15s ease;
+}
+
+.bhec-section.is-open .bhec-section-toggle .dashicons { transform: rotate(180deg); }
+
+.bhec-section-body {
+	padding: 4px 16px 16px;
+	border-top: 1px solid var(--bhec-line);
+}
+
+.bhec-section-body > .bhec-hint:first-child { margin: 12px 0 16px; }
+
+/* ----- Popovers --------------------------------------------------------- */
+
+.bhec-popover {
+	position: absolute;
+	z-index: 10000;
+	width: 320px;
+	max-height: 380px;
+	overflow: auto;
+	padding: 8px;
+	border: 1px solid var(--bhec-border);
+	border-radius: 4px;
+	background: var(--bhec-surface);
+	box-shadow: 0 6px 24px var(--bhec-shadow);
+	color: var(--bhec-text);
+}
+
+/* ----- Dialogs (<dialog class="bhec-dialog">) ---------------------------- */
+
+dialog.bhec-dialog {
+	box-sizing: border-box;
+	width: min(520px, calc(100vw - 32px));
+	padding: 24px;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+	background: var(--bhec-surface);
+	color: var(--bhec-text);
+}
+
+dialog.bhec-dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
+
+dialog.bhec-dialog h2 { margin: 0 0 12px; font-size: 18px; }
+
+.bhec-dialog-body p { margin: 0 0 12px; font-size: 14px; }
+
+.bhec-dialog-note {
+	margin: 0 0 12px;
+	padding: 10px 12px;
+	border-left: 4px solid var(--bhec-note-edge);
+	background: var(--bhec-note-bg);
+}
+
+.bhec-dialog-note p { margin: 0; }
+
+.bhec-dialog-actions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+	margin-top: 20px;
+}
+
+.bhec-dialog-close {
+	color: var(--bhec-muted);
+	text-decoration: none;
+}
+
+.bhec-dialog-close .dashicons { font-size: 24px; width: 24px; height: 24px; }
+
+/* Two or three buttons acting as one switch. */
+.bhec-segmented { display: flex; }
+
+.bhec-segmented .button { border-radius: 0; }
+.bhec-segmented .button:first-child { border-radius: 3px 0 0 3px; }
+.bhec-segmented .button:last-child { border-radius: 0 3px 3px 0; margin-left: -1px; }
+
+/* Secondary buttons are already accent-colored in WordPress 7, so the chosen
+   one also gets a tint and weight. Buttons use aria-pressed, links aria-current. */
+.bhec-segmented .button[aria-pressed="true"],
+.bhec-segmented .button[aria-current] {
+	position: relative;
+	border-color: var(--bhec-accent);
+	background: var(--bhec-accent-soft);
+	color: var(--bhec-accent);
+	font-weight: 600;
+}
+
+/* ----- Numbers strip and call-outs -------------------------------------- */
+
+.bhec-stats {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	border: 1px solid var(--bhec-border);
+	background: var(--bhec-surface);
+}
+
+.bhec-stats-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.bhec-stat { padding: 14px 16px; }
+
+.bhec-stat + .bhec-stat { border-left: 1px solid var(--bhec-line); }
+
+.bhec-stat-label {
+	display: block;
+	color: var(--bhec-muted);
+	font-size: 13px;
+}
+
+.bhec-stat-value {
+	display: block;
+	min-height: 32px;
+	color: var(--bhec-text);
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 32px;
+	font-variant-numeric: tabular-nums;
+}
+
+.bhec-stat-sub {
+	display: block;
+	min-height: 1.5em;
+	color: var(--bhec-muted);
+	font-size: 12px;
+}
+
+.bhec-stats-note { margin: 8px 0 16px; }
+
+.bhec-callout { margin: 0 0 16px; }
+
+.bhec-callout p:last-child { margin-bottom: 8px; }
+
+/* ----- Email editors (campaigns and automatic emails) ----------------- */
+
+/* Wrap the editor in .bhec-editor; markup follows page-campaign-edit.php. */
+
+.bhec-editor #titlediv { margin-bottom: 16px; }
+
+.bhec-editor #titlediv #bhec-title {
+	width: 100%;
+	height: 1.7em;
+	margin: 0 0 3px;
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 100%;
+	background: var(--bhec-input);
+	color: var(--bhec-text);
+	outline: 0;
+}
+
+.bhec-editor #titlediv .bhec-hint { margin-top: 4px; }
+
+.bhec-compose .inside { padding: 16px 16px 12px; margin: 0; }
+
+.bhec-compose .wp-editor-tools { padding-top: 0; }
+
+.bhec-subject-input {
+	width: 100%;
+	padding: 4px 10px;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.bhec-subject-meter { min-height: 1.5em; }
+
+.bhec-attachments { margin: 0 0 8px; }
+
+.bhec-attachments li {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin: 0 0 4px;
+}
+
+.bhec-attachments .dashicons { color: var(--bhec-muted); }
+
+/* Send box: a WordPress "Publish" style box. */
+
+.bhec-sendbox .inside { padding-top: 4px; }
+
+.bhec-check-row {
+	display: flex;
+	gap: 6px;
+}
+
+.bhec-check-row .button { flex: 1; text-align: center; }
+
+.bhec-test-form { margin-top: 12px; }
+
+.bhec-test-form .bhec-inline input { flex: 1; min-width: 0; }
+
+/* Doubled class: WooCommerce sets this box to display: block with the same weight. */
+.bhec-wrap .bhec-sendbox #major-publishing-actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+.bhec-sendbox #major-publishing-actions .clear { display: none; }
+
+.bhec-sendbox #delete-action,
+.bhec-sendbox #publishing-action {
+	float: none;
+	line-height: 1.4;
+}
+
+.bhec-sendbox #publishing-action {
+	display: flex;
+	align-items: center;
+	text-align: right;
+}
+
+.bhec-sendbox #publishing-action .spinner { float: none; margin: 0 8px 0 0; }
+
+.bhec-save-state {
+	display: block;
+	color: var(--bhec-muted);
+	font-size: 12px;
+}
+
+/* Personalize menu and product picker. */
+
+#bhec-product-popover { width: 340px; overflow: visible; padding: 12px; }
+
+.bhec-tag-group + .bhec-tag-group { margin-top: 6px; }
+
+.bhec-tag-group-label {
+	margin: 4px 8px;
+	color: var(--bhec-muted);
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.bhec-tag-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	padding: 6px 8px;
+	border: 0;
+	border-radius: 3px;
+	background: none;
+	color: var(--bhec-text);
+	font-size: 13px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.bhec-tag-item span {
+	flex: none;
+	white-space: nowrap;
+}
+
+.bhec-tag-item code {
+	min-width: 0;
+	overflow: hidden;
+	padding: 0;
+	background: none;
+	color: var(--bhec-muted);
+	font-size: 11px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bhec-tag-item:hover,
+.bhec-tag-item:focus {
+	background: var(--bhec-hover);
+	outline: 0;
+}
+
+.bhec-tag-item:focus-visible { box-shadow: inset 0 0 0 1px var(--bhec-accent); }
+
+.bhec-tag-tip {
+	margin: 8px 8px 2px;
+	padding-top: 8px;
+	border-top: 1px solid var(--bhec-line);
+	color: var(--bhec-muted);
+	font-size: 12px;
+}
+
+.bhec-tag-tip code { font-size: 11px; }
+
+/* Preview dialog. */
+
+.bhec-dialog-subject {
+	padding: 10px 12px;
+	border-radius: 3px;
+	background: var(--bhec-soft);
+}
+
+dialog.bhec-preview-dialog {
+	width: min(900px, calc(100vw - 32px));
+	height: min(860px, calc(100vh - 48px));
+	padding: 0;
+	overflow: hidden;
+}
+
+dialog.bhec-preview-dialog[open] {
+	display: flex;
+	flex-direction: column;
+}
+
+.bhec-preview-head {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 16px 20px 0;
+}
+
+.bhec-preview-head > div:first-child { flex: 1; min-width: 0; }
+
+.bhec-preview-head h2 { margin: 0; }
+
+.bhec-preview-subject {
+	margin: 4px 0 0;
+	overflow: hidden;
+	color: var(--bhec-muted);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bhec-preview-note { margin: 8px 20px 12px; }
+
+.bhec-preview-frame {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	min-height: 0;
+	background: var(--bhec-frame);
+}
+
+.bhec-preview-frame iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	background: #fff;
+	transition: width 0.2s ease;
+}
+
+.bhec-preview-dialog.is-mobile .bhec-preview-frame { padding: 16px 0; }
+
+.bhec-preview-dialog.is-mobile .bhec-preview-frame iframe {
+	width: 390px;
+	border-radius: 8px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- Narrow screens --------------------------------------------------- */
+
+@media screen and (max-width: 782px) {
+	.bhec-grid { grid-template-columns: minmax(0, 1fr); }
+
+	.bhec-mobile-status {
+		display: block;
+		margin-top: 6px;
+	}
+
+	.bhec-stats,
+	.bhec-stats-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.bhec-stat:nth-child(3) { border-left: 0; }
+	.bhec-stat:nth-child(n+3) { border-top: 1px solid var(--bhec-line); }
+
+	.bhec-section-summary { display: none; }
+}
+
+/* ----- The logo (Settings, Pro tab and License) ------------------------- */
+
+.bhec-logo {
+	display: block;
+	margin: 16px 0 4px;
+	border-radius: 16px;
+}
+
+/* A campaign's subject test result. */
+.bhec-ab-result { margin: 0 0 12px; }
+.bhec-ab-result ul { margin: 4px 0 0 1.2em; list-style: disc; }
+.bhec-ab-result p { margin: 4px 0; }
+.bhec-ab summary { cursor: pointer; font-weight: 600; margin-top: 8px; }
+.bhec-ab select { min-width: 8em; }

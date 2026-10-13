@@ -1,0 +1,323 @@
+/**
+ * Reports screen, its charts, and the Dashboard widget (which loads this file
+ * with bhec-ui.css). Shared pieces are in bhec-ui.css.
+ */
+
+.bhec-reports,
+.bhec-widget {
+	/* Chart colors: the admin blue for opens, a warm orange for clicks, and a
+	   quiet gray for the emails sent behind them. Checked for color blindness. */
+	--bhec-series-sent: #8c8f94;
+	--bhec-series-sent-hover: #50575e;
+	--bhec-series-opens: #2271b1;
+	--bhec-series-clicks: #d9622b;
+	--bhec-chart-grid: #f0f0f1;
+	--bhec-chart-base: #c3c4c7;
+}
+
+/* Dark mode: see bhec-ui.css. */
+body.dark-mode .bhec-reports,
+body.dark-mode .bhec-widget {
+	--bhec-series-sent: #6b7685;
+	--bhec-series-sent-hover: #a0aab6;
+	--bhec-series-opens: var(--dm-accent, #6b9cff);
+	--bhec-series-clicks: #f0915e;
+	--bhec-chart-grid: var(--dm-border-subtle, #2e3440);
+	--bhec-chart-base: var(--dm-border-strong, #4c566a);
+}
+
+/* ----- Period switch ---------------------------------------------------- */
+
+.bhec-report-filters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 14px;
+	margin: 12px 0 16px;
+}
+
+/* ----- Numbers strip ---------------------------------------------------- */
+
+.bhec-stats-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+/* A long amount wraps rather than hiding digits. */
+.bhec-reports .bhec-stat-value { overflow-wrap: anywhere; }
+
+.bhec-report-status {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px 10px;
+	margin: 4px 0 16px;
+}
+
+.bhec-report-quiet {
+	margin: 8px 0;
+	color: var(--bhec-muted);
+}
+
+.bhec-reports .postbox { margin: 0 0 16px; }
+
+.bhec-reports .postbox .inside { margin: 0; padding: 12px 16px 16px; }
+
+.bhec-section-hint { margin: -4px 0 12px; }
+
+/* ----- Charts ----------------------------------------------------------- */
+
+.bhec-chart-pair {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px 32px;
+}
+
+.bhec-chart-figure { margin: 0; min-width: 0; }
+
+.bhec-chart-title {
+	margin: 0 0 4px;
+	color: var(--bhec-text);
+	font-weight: 600;
+}
+
+.bhec-chart-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 16px;
+	margin: 0 0 4px;
+	color: var(--bhec-muted);
+	font-size: 12px;
+}
+
+.bhec-chart-legend li {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin: 0;
+}
+
+/* A short line in the series color: legends and tooltips key lines this way. */
+.bhec-chart-key {
+	display: inline-block;
+	flex: none;
+	width: 14px;
+	height: 3px;
+	border-radius: 2px;
+	background: currentColor;
+}
+
+.bhec-chart-key.bhec-series-sent { height: 10px; background: var(--bhec-series-sent); }
+.bhec-chart-key.bhec-series-opens { background: var(--bhec-series-opens); }
+.bhec-chart-key.bhec-series-clicks { background: var(--bhec-series-clicks); }
+
+/* Fixed height so the page doesn't move when the script draws the chart. */
+.bhec-chart {
+	position: relative;
+	height: 220px;
+	border-radius: 2px;
+	touch-action: pan-y;
+}
+
+.bhec-chart:focus { outline: 0; }
+
+.bhec-chart:focus-visible { box-shadow: 0 0 0 2px var(--bhec-accent); }
+
+.bhec-chart svg { display: block; overflow: visible; }
+
+.bhec-chart-grid { stroke: var(--bhec-chart-grid); stroke-width: 1; }
+
+.bhec-chart-base { stroke: var(--bhec-chart-base); stroke-width: 1; }
+
+.bhec-chart-tick,
+.bhec-chart-label {
+	fill: var(--bhec-muted);
+	font-size: 11px;
+	font-variant-numeric: tabular-nums;
+}
+
+.bhec-chart-value {
+	fill: var(--bhec-text);
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.bhec-chart-bar.bhec-series-sent { fill: var(--bhec-series-sent); }
+
+.bhec-chart-bar.is-active { fill: var(--bhec-series-sent-hover); }
+
+.bhec-chart-line {
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.bhec-chart-line.bhec-series-opens { stroke: var(--bhec-series-opens); }
+.bhec-chart-line.bhec-series-clicks { stroke: var(--bhec-series-clicks); }
+
+.bhec-chart-dot {
+	stroke: var(--bhec-surface, #fff);
+	stroke-width: 2;
+}
+
+.bhec-chart-dot.bhec-series-opens { fill: var(--bhec-series-opens); }
+.bhec-chart-dot.bhec-series-clicks { fill: var(--bhec-series-clicks); }
+
+.bhec-chart-cross { stroke: var(--bhec-chart-base); stroke-width: 1; }
+
+.bhec-chart-tip {
+	position: absolute;
+	z-index: 2;
+	min-width: 120px;
+	padding: 8px 10px;
+	border: 1px solid var(--bhec-border);
+	border-radius: 4px;
+	background: var(--bhec-surface, #fff);
+	box-shadow: 0 2px 8px var(--bhec-shadow, rgba(0, 0, 0, 0.12));
+	color: var(--bhec-text);
+	font-size: 12px;
+	line-height: 1.5;
+	pointer-events: none;
+	white-space: nowrap;
+}
+
+.bhec-chart-tip-date {
+	margin-bottom: 2px;
+	color: var(--bhec-muted);
+}
+
+.bhec-chart-tip-row {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.bhec-chart-tip-row strong { font-variant-numeric: tabular-nums; }
+
+.bhec-chart-numbers { margin-top: 12px; }
+
+.bhec-chart-numbers table { margin-top: 4px; }
+
+.bhec-reports table .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.bhec-chart-numbers tfoot th,
+.bhec-chart-numbers tfoot td { font-weight: 600; }
+
+/* ----- Report tables ---------------------------------------------------- */
+
+.wp-list-table.bhec-report-campaigns .column-sent,
+.wp-list-table.bhec-report-campaigns .column-opened,
+.wp-list-table.bhec-report-campaigns .column-clicked,
+.wp-list-table.bhec-report-automatics .column-sent,
+.wp-list-table.bhec-report-automatics .column-opened,
+.wp-list-table.bhec-report-automatics .column-clicked { width: 110px; }
+
+.wp-list-table.bhec-report-campaigns .column-revenue,
+.wp-list-table.bhec-report-automatics .column-revenue { width: 130px; }
+
+.wp-list-table.bhec-report-campaigns .row-title,
+.wp-list-table.bhec-report-automatics .row-title { font-size: 14px; }
+
+.bhec-report-mobile { display: none; }
+
+.bhec-links-table { border: 0; }
+
+.bhec-links-table td.column-link {
+	width: 100%;
+	max-width: 0;
+}
+
+.bhec-links-table td.column-link a {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bhec-links-table th.num { white-space: nowrap; }
+
+/* ----- Dashboard widget ------------------------------------------------- */
+
+.bhec-widget { container-type: inline-size; }
+
+.bhec-widget .bhec-stats {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin: 0 0 4px;
+}
+
+.bhec-widget .bhec-stat { padding: 10px 12px; }
+
+.bhec-widget .bhec-stat:nth-child(3) { border-left: 0; }
+
+.bhec-widget .bhec-stat:nth-child(n+3) { border-top: 1px solid var(--bhec-line); }
+
+.bhec-widget .bhec-stat-value {
+	font-size: 20px;
+	line-height: 28px;
+	min-height: 28px;
+}
+
+@container (min-width: 440px) {
+	.bhec-widget .bhec-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+	.bhec-widget .bhec-stat:nth-child(3) { border-left: 1px solid var(--bhec-line); }
+	.bhec-widget .bhec-stat:nth-child(n+3) { border-top: 0; }
+}
+
+.bhec-widget .bhec-widget-heading {
+	margin: 16px 0 4px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.bhec-widget-list { margin: 0; }
+
+.bhec-widget-list li {
+	margin: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid var(--bhec-line);
+}
+
+.bhec-widget-row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.bhec-widget-main { min-width: 0; }
+
+.bhec-widget-title {
+	display: block;
+	overflow: hidden;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bhec-widget .bhec-progress { max-width: none; }
+
+.bhec-widget-links { margin: 12px 0 0; }
+
+.bhec-widget-links span { margin: 0 6px; color: var(--bhec-border); }
+
+/* ----- Narrow screens --------------------------------------------------- */
+
+@media screen and (max-width: 1280px) {
+	.bhec-stats-5 .bhec-stat-value { font-size: 22px; }
+}
+
+@media screen and (max-width: 960px) {
+	.bhec-chart-pair { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media screen and (max-width: 782px) {
+	.bhec-stats-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.bhec-stats-5 .bhec-stat:nth-child(5) {
+		grid-column: 1 / -1;
+		border-left: 0;
+	}
+
+	.bhec-reports .bhec-stat-value { font-size: 22px; }
+
+	.bhec-report-mobile { display: block; }
+
+	.bhec-links-table .column-share { display: none; }
+}
