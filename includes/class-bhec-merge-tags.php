@@ -53,7 +53,7 @@ class BHEC_Merge_Tags {
 	 *
 	 * Values are escaped for where they land: HTML in a message, plain text in
 	 * a subject or an address. A value can't turn into another tag in a later
-	 * step, such as a name typed as {{ coupon }} (HANDOFF L2).
+	 * step, such as a name typed as {{ coupon }}.
 	 *
 	 * @param string $text          Text containing merge tags.
 	 * @param array  $customer_data Associative array of customer data.

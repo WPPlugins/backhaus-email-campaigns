@@ -45,7 +45,7 @@ class BHEC_Import_Export {
 
 	/**
 	 * Secrets that never go into a file and are never taken from one, even
-	 * if a later change lists them above (HANDOFF M8).
+	 * if a later change lists them above.
 	 *
 	 * @var string[]
 	 */

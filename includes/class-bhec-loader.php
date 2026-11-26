@@ -581,7 +581,7 @@ class BHEC_Loader {
 			wp_die( esc_html__( 'Invalid nonce.', 'backhaus-email-campaigns' ) );
 		}
 
-		// Settings are for administrators, as on the Settings tabs (HANDOFF M8).
+		// Settings are for administrators, as on the Settings tabs.
 		if ( ! current_user_can( 'manage_options' ) ) {
 			wp_die( esc_html__( 'Permission denied.', 'backhaus-email-campaigns' ) );
 		}
@@ -609,7 +609,7 @@ class BHEC_Loader {
 			wp_die( esc_html__( 'Invalid nonce.', 'backhaus-email-campaigns' ) );
 		}
 
-		// Settings are for administrators, as on the Settings tabs (HANDOFF M8).
+		// Settings are for administrators, as on the Settings tabs.
 		if ( ! current_user_can( 'manage_options' ) ) {
 			wp_die( esc_html__( 'Permission denied.', 'backhaus-email-campaigns' ) );
 		}
@@ -729,7 +729,7 @@ class BHEC_Loader {
 
 		
 		// An order counts toward an email's revenue once it's paid, not when the
-		// thank-you page loads, which an unpaid order reaches too (HANDOFF S6).
+		// thank-you page loads, which an unpaid order reaches too.
 		add_action( 'woocommerce_order_status_processing', array( $this, 'track_conversion' ) );
 		add_action( 'woocommerce_order_status_completed', array( $this, 'track_conversion' ) );
 

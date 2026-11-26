@@ -99,7 +99,7 @@ class BHEC_Admin_Logs {
 	}
 
 	/**
-	 * Names of automatic emails, for log entries (HANDOFF L13).
+	 * Names of automatic emails, for log entries.
 	 *
 	 * @param int[] $ids Rule ids; empty and repeated ones are fine.
 	 * @return array id => name, for rules that still exist.

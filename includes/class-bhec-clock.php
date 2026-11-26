@@ -2,7 +2,7 @@
 /**
  * The database clock. Columns filled by CURRENT_TIMESTAMP (log times,
  * tracking events, created and updated times) use the MySQL server's time
- * zone, which is UTC on most hosts but not all (HANDOFF L8).
+ * zone, which is UTC on most hosts but not all.
  *
  * @package BackHAUSEmailCampaigns
  */

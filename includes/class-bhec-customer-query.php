@@ -78,7 +78,7 @@ class BHEC_Customer_Query {
 	/**
 	 * Condition: the order has a line item for one of these products. A join
 	 * would repeat the order once per matching item and multiply its total in
-	 * the spend filters (HANDOFF M6).
+	 * the spend filters.
 	 *
 	 * @param string $order_column Order id column in the outer query.
 	 * @param int[]  $product_ids  Product ids.

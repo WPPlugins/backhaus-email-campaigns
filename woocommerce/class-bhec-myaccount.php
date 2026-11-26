@@ -46,7 +46,7 @@ class BHEC_MyAccount {
 	 * emails on the customer's own paid orders (campaigns go to those, and they
 	 * can differ). Not the profile's billing email on its own: anyone can type
 	 * any address there, and a choice made here must not reach someone else's
-	 * inbox (HANDOFF S2). Every paid order counts, not only the latest (S3).
+	 * inbox. Every paid order counts, not only the latest.
 	 *
 	 * @param WP_User $user Customer.
 	 * @return string[] Lowercase addresses.

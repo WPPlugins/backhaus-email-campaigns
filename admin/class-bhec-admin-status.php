@@ -311,7 +311,7 @@ class BHEC_Admin_Status {
 	const DKIM_SELECTORS = array(
 		'Google'        => array( 'google' ),
 		'Microsoft 365' => array( 'selector1', 'selector2' ),
-		'Mailgun'       => array( 'k1', 'mx', 'smtp', 'krs', 'pic' ),
+		'Mailgun'       => array( 'pdk1', 'pdk2', 'k1', 'mx', 'smtp', 'krs', 'pic' ),
 		'SendGrid'      => array( 's1', 's2' ),
 		'Brevo'         => array( 'brevo1', 'brevo2', 'mail' ),
 		'Zoho Mail'     => array( 'zmail', 'zoho' ),
@@ -319,7 +319,7 @@ class BHEC_Admin_Status {
 		'MailerSend'    => array( 'mlsend', 'mlsend2' ),
 		'Resend'        => array( 'resend' ),
 		'Mandrill'      => array( 'mandrill', 'mte1', 'mte2' ),
-		''              => array( 'default', 'dkim', 'mail', 'google', 'selector1', 'selector2', 'k1', 's1' ),
+		''              => array( 'default', 'dkim', 'mail', 'google', 'selector1', 'selector2', 'k1', 'pdk1', 's1' ),
 	);
 
 	/**

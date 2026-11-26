@@ -55,7 +55,7 @@ class BHEC_Migrator {
 		}
 
 		// Requests that load a new version at the same moment would each add the
-		// same columns (HANDOFF L12). One upgrades; the others wait for it, then
+		// same columns. One upgrades; the others wait for it, then
 		// find the work done.
 		if ( ! BHEC_Send_Control::lock( 'migrate', 15 ) ) {
 			return;
@@ -217,7 +217,7 @@ class BHEC_Migrator {
 
 	/**
 	 * Migration 1.2.0: automatic emails are tracked under minus their rule id,
-	 * which unsigned columns turned into 0 or refused (HANDOFF L1).
+	 * which unsigned columns turned into 0 or refused.
 	 */
 	private static function migrate_1_2_0() {
 		global $wpdb;
@@ -235,7 +235,7 @@ class BHEC_Migrator {
 
 	/**
 	 * Migration 1.4.0: drop the bhec_automations table from before 1.1, which
-	 * nothing uses (HANDOFF L10), as long as it holds nothing. The log's new
+	 * nothing uses, as long as it holds nothing. The log's new
 	 * rule_id column comes from the activator.
 	 */
 	private static function migrate_1_4_0() {

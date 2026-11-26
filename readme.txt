@@ -2,9 +2,9 @@
 Contributors: backhaus
 Tags: email marketing, newsletter, woocommerce, customers, email campaigns
 Requires at least: 6.0
-Tested up to: 7.1
+Tested up to: 7.2
 Requires PHP: 7.4
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,10 @@ Pro only: BackHAUS Email Campaigns Pro checks its license and looks for updates 
 8. Status: is email working, including your sender domain's records.
 
 == Changelog ==
+
+= 1.5.3 =
+* Tested with WordPress 7.2, WooCommerce 11.3 and PHP 8.6.
+* Status > Sender Domain finds DKIM under Mailgun's newer pdk1 and pdk2 names.
 
 = 1.5.2 =
 * Fix: choosing recipients by number of orders or amount spent together with a customer role, a registered date or an excluded segment mixed the values up, so the campaign reached the wrong people or nobody.
@@ -215,6 +219,9 @@ Pro only: BackHAUS Email Campaigns Pro checks its license and looks for updates 
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.5.3 =
+WordPress 7.2 compatibility, and the Sender Domain check finds Mailgun's newer DKIM records.
 
 = 1.5.2 =
 Fixes recipient filters that combine order count or spend with role, registered date or an excluded segment.

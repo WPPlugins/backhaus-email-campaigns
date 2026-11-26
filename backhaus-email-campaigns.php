@@ -3,7 +3,7 @@
  * Plugin Name: BackHAUS Email Campaigns for WooCommerce
  * Plugin URI:  https://backhaus.sg/email-campaigns
  * Description: Email your WooCommerce customers from WordPress, sent through your store's own mail setup.
- * Version:     1.5.2
+ * Version:     1.5.3
  * Author:      BackHAUS
  * Author URI:  https://backhaus.sg/
  * License:     GPL-2.0-or-later
@@ -13,7 +13,7 @@
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * WC requires at least: 7.0
- * WC tested up to: 11.1
+ * WC tested up to: 11.3
  * Requires Plugins: woocommerce
  *
  * @package BackHAUSEmailCampaigns
@@ -34,7 +34,7 @@ if ( defined( 'BHEC_VERSION' ) ) {
 }
 
 // Plugin constants.
-define( 'BHEC_VERSION', '1.5.2' );
+define( 'BHEC_VERSION', '1.5.3' );
 define( 'BHEC_PLUGIN_FILE', __FILE__ );
 define( 'BHEC_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BHEC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

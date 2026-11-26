@@ -509,7 +509,7 @@ class BHEC_Tracker {
 
 	/**
 	 * The visitor's IP address. REMOTE_ADDR is the connection's own address,
-	 * which a visitor can't forge; X-Forwarded-For can be (HANDOFF L4). A site
+	 * which a visitor can't forge; X-Forwarded-For can be. A site
 	 * behind a proxy or CDN hands in the real address with the bhec_client_ip
 	 * filter.
 	 *

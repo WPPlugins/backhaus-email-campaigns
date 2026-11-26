@@ -48,7 +48,7 @@ class BHEC_Subscription {
 	 */
 	public static function subscribe( $email, $customer_id = 0, $source = 'admin' ) {
 		// Free sends no confirmation emails, so it can't take a billing address
-		// that may belong to someone else (HANDOFF S1).
+		// that may belong to someone else.
 		if ( 'myaccount_billing' === $source && ! class_exists( 'BHEC_Double_Optin' ) ) {
 			return false;
 		}
